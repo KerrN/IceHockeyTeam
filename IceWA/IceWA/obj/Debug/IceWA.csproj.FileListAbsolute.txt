@@ -1,0 +1,15 @@
+e:\users\nillzie\documents\visual studio 2010\Projects\IceWA\IceWA\Bin\Debug\ApplicationIcon.png
+e:\users\nillzie\documents\visual studio 2010\Projects\IceWA\IceWA\Bin\Debug\Background.png
+e:\users\nillzie\documents\visual studio 2010\Projects\IceWA\IceWA\Bin\Debug\IceWA.dll
+e:\users\nillzie\documents\visual studio 2010\Projects\IceWA\IceWA\Bin\Debug\IceWA.pdb
+e:\users\nillzie\documents\visual studio 2010\Projects\IceWA\IceWA\Bin\Debug\AppManifest.xaml
+e:\users\nillzie\documents\visual studio 2010\Projects\IceWA\IceWA\Bin\Debug\IceWA.xap
+e:\users\nillzie\documents\visual studio 2010\Projects\IceWA\IceWA\obj\Debug\App.g.i.cs
+e:\users\nillzie\documents\visual studio 2010\Projects\IceWA\IceWA\obj\Debug\MainPage.g.i.cs
+e:\users\nillzie\documents\visual studio 2010\Projects\IceWA\IceWA\obj\Debug\penaltyType.g.i.cs
+e:\users\nillzie\documents\visual studio 2010\Projects\IceWA\IceWA\obj\Debug\PlayerSelect.g.i.cs
+e:\users\nillzie\documents\visual studio 2010\Projects\IceWA\IceWA\obj\Debug\IceWA.g.resources
+e:\users\nillzie\documents\visual studio 2010\Projects\IceWA\IceWA\obj\Debug\IceWA.dll
+e:\users\nillzie\documents\visual studio 2010\Projects\IceWA\IceWA\obj\Debug\IceWA.pdb
+e:\users\nillzie\documents\visual studio 2010\Projects\IceWA\IceWA\obj\Debug\XapCacheFile.xml
+e:\users\nillzie\documents\visual studio 2010\Projects\IceWA\IceWA\obj\Debug\penaltyMain.g.i.cs
