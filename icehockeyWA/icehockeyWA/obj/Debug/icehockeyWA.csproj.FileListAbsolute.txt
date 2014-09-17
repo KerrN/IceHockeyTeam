@@ -1,80 +1,26 @@
-H:\Mobile\Project\icehockeyWA\icehockeyWA\Bin\Debug\ApplicationIcon.png
-H:\Mobile\Project\icehockeyWA\icehockeyWA\Bin\Debug\Background.png
-H:\Mobile\Project\icehockeyWA\icehockeyWA\Bin\Debug\icehockeyWA.dll
-H:\Mobile\Project\icehockeyWA\icehockeyWA\Bin\Debug\icehockeyWA.pdb
-H:\Mobile\Project\icehockeyWA\icehockeyWA\Bin\Debug\AppManifest.xaml
-H:\Mobile\Project\icehockeyWA\icehockeyWA\Bin\Debug\icehockeyWA.xap
-H:\Mobile\Project\icehockeyWA\icehockeyWA\Bin\Debug\Microsoft.Phone.Controls.dll
-H:\Mobile\Project\icehockeyWA\icehockeyWA\Bin\Debug\Microsoft.Phone.Controls.xml
-H:\Mobile\Project\icehockeyWA\icehockeyWA\obj\Debug\App.g.i.cs
-H:\Mobile\Project\icehockeyWA\icehockeyWA\obj\Debug\Log.g.i.cs
-H:\Mobile\Project\icehockeyWA\icehockeyWA\obj\Debug\icehockeyWA.g.resources
-H:\Mobile\Project\icehockeyWA\icehockeyWA\obj\Debug\icehockeyWA.dll
-H:\Mobile\Project\icehockeyWA\icehockeyWA\obj\Debug\icehockeyWA.pdb
-H:\Mobile\Project\icehockeyWA\icehockeyWA\obj\Debug\XapCacheFile.xml
-H:\Mobile\Project\icehockeyWA\icehockeyWA\obj\Debug\icehockeyWA.csprojResolveAssemblyReference.cache
-H:\Mobile\Project\icehockeyWA\icehockeyWA\obj\Debug\assist.g.i.cs
-H:\Mobile\Project\icehockeyWA\icehockeyWA\obj\Debug\playerNumber.g.i.cs
-H:\Mobile\Project\icehockeyWA\icehockeyWA\obj\Debug\MainPage.g.i.cs
-H:\Mobile\Project\icehockeyWA\icehockeyWA\obj\Debug\OtherSettings.g.i.cs
-H:\Mobile\Project\icehockeyWA\icehockeyWA\obj\Debug\ChangeGoalie.g.i.cs
-H:\Mobile\Project\icehockeyWA\icehockeyWA\obj\Debug\Entrance.g.i.cs
-H:\Mobile\Project\icehockeyWA\icehockeyWA\obj\Debug\Penalty.g.i.cs
-H:\Mobile\Project\icehockeyWA\icehockeyWA\obj\Debug\PostGame.g.i.cs
-H:\Mobile\Project\icehockeyWA\icehockeyWA\obj\Debug\SelectGame.g.i.cs
-H:\Mobile\Project\icehockeyWA\icehockeyWA\obj\Debug\Notes.g.i.cs
-C:\Users\Jinho\Documents\Visual Studio 2010\Projects\icehockeyWA\icehockeyWA\obj\Debug\icehockeyWA.csprojResolveAssemblyReference.cache
-C:\Users\Jinho\Documents\Visual Studio 2010\Projects\icehockeyWA\icehockeyWA\obj\Debug\App.g.cs
-C:\Users\Jinho\Documents\Visual Studio 2010\Projects\icehockeyWA\icehockeyWA\obj\Debug\Assist.g.cs
-C:\Users\Jinho\Documents\Visual Studio 2010\Projects\icehockeyWA\icehockeyWA\obj\Debug\ChangeGoalie.g.cs
-C:\Users\Jinho\Documents\Visual Studio 2010\Projects\icehockeyWA\icehockeyWA\obj\Debug\Entrance.g.cs
-C:\Users\Jinho\Documents\Visual Studio 2010\Projects\icehockeyWA\icehockeyWA\obj\Debug\Log.g.cs
-C:\Users\Jinho\Documents\Visual Studio 2010\Projects\icehockeyWA\icehockeyWA\obj\Debug\Notes.g.cs
-C:\Users\Jinho\Documents\Visual Studio 2010\Projects\icehockeyWA\icehockeyWA\obj\Debug\OtherSettings.g.cs
-C:\Users\Jinho\Documents\Visual Studio 2010\Projects\icehockeyWA\icehockeyWA\obj\Debug\Penalty.g.cs
-C:\Users\Jinho\Documents\Visual Studio 2010\Projects\icehockeyWA\icehockeyWA\obj\Debug\PlayerNumber.g.cs
-C:\Users\Jinho\Documents\Visual Studio 2010\Projects\icehockeyWA\icehockeyWA\obj\Debug\PostGame.g.cs
-C:\Users\Jinho\Documents\Visual Studio 2010\Projects\icehockeyWA\icehockeyWA\obj\Debug\SelectGame.g.cs
-C:\Users\Jinho\Documents\Visual Studio 2010\Projects\icehockeyWA\icehockeyWA\obj\Debug\icehockeyWA.g.resources
-C:\Users\Jinho\Documents\Visual Studio 2010\Projects\icehockeyWA\icehockeyWA\obj\Debug\icehockeyWA.dll
-C:\Users\Jinho\Documents\Visual Studio 2010\Projects\icehockeyWA\icehockeyWA\obj\Debug\icehockeyWA.pdb
-C:\Users\Jinho\Documents\Visual Studio 2010\Projects\icehockeyWA\icehockeyWA\Bin\Debug\ApplicationIcon.png
-C:\Users\Jinho\Documents\Visual Studio 2010\Projects\icehockeyWA\icehockeyWA\Bin\Debug\Background.png
-C:\Users\Jinho\Documents\Visual Studio 2010\Projects\icehockeyWA\icehockeyWA\Bin\Debug\icehockeyWA.dll
-C:\Users\Jinho\Documents\Visual Studio 2010\Projects\icehockeyWA\icehockeyWA\Bin\Debug\icehockeyWA.pdb
-C:\Users\Jinho\Documents\Visual Studio 2010\Projects\icehockeyWA\icehockeyWA\Bin\Debug\AppManifest.xaml
-C:\Users\Jinho\Documents\Visual Studio 2010\Projects\icehockeyWA\icehockeyWA\Bin\Debug\icehockeyWA.xap
-C:\Users\Jinho\Documents\Visual Studio 2010\Projects\icehockeyWA\icehockeyWA\Bin\Debug\Microsoft.Phone.Controls.Toolkit.dll
-C:\Users\Jinho\Documents\Visual Studio 2010\Projects\icehockeyWA\icehockeyWA\Bin\Debug\Microsoft.Phone.Controls.dll
-C:\Users\Jinho\Documents\Visual Studio 2010\Projects\icehockeyWA\icehockeyWA\Bin\Debug\Microsoft.Phone.Controls.Toolkit.pdb
-C:\Users\Jinho\Documents\Visual Studio 2010\Projects\icehockeyWA\icehockeyWA\Bin\Debug\Microsoft.Phone.Controls.Toolkit.xml
-C:\Users\Jinho\Documents\Visual Studio 2010\Projects\icehockeyWA\icehockeyWA\Bin\Debug\Microsoft.Phone.Controls.xml
-C:\Users\Jinho\Documents\Visual Studio 2010\Projects\icehockeyWA\icehockeyWA\obj\Debug\XapCacheFile.xml
-C:\Users\Jinho\Documents\Visual Studio 2010\Projects\icehockeyWA\icehockeyWA\obj\Debug\Game.g.cs
-H:\GitHub\icehockeyWA\icehockeyWA\icehockeyWA\Bin\Debug\ApplicationIcon.png
-H:\GitHub\icehockeyWA\icehockeyWA\icehockeyWA\Bin\Debug\Background.png
-H:\GitHub\icehockeyWA\icehockeyWA\icehockeyWA\Bin\Debug\icehockeyWA.dll
-H:\GitHub\icehockeyWA\icehockeyWA\icehockeyWA\Bin\Debug\icehockeyWA.pdb
-H:\GitHub\icehockeyWA\icehockeyWA\icehockeyWA\Bin\Debug\AppManifest.xaml
-H:\GitHub\icehockeyWA\icehockeyWA\icehockeyWA\Bin\Debug\icehockeyWA.xap
-H:\GitHub\icehockeyWA\icehockeyWA\icehockeyWA\Bin\Debug\Microsoft.Phone.Controls.dll
-H:\GitHub\icehockeyWA\icehockeyWA\icehockeyWA\Bin\Debug\Microsoft.Phone.Controls.Toolkit.pdb
-H:\GitHub\icehockeyWA\icehockeyWA\icehockeyWA\Bin\Debug\Microsoft.Phone.Controls.Toolkit.xml
-H:\GitHub\icehockeyWA\icehockeyWA\icehockeyWA\Bin\Debug\Microsoft.Phone.Controls.xml
-H:\GitHub\icehockeyWA\icehockeyWA\icehockeyWA\obj\Debug\icehockeyWA.csprojResolveAssemblyReference.cache
-H:\GitHub\icehockeyWA\icehockeyWA\icehockeyWA\obj\Debug\App.g.i.cs
-H:\GitHub\icehockeyWA\icehockeyWA\icehockeyWA\obj\Debug\Assist.g.i.cs
-H:\GitHub\icehockeyWA\icehockeyWA\icehockeyWA\obj\Debug\ChangeGoalie.g.i.cs
-H:\GitHub\icehockeyWA\icehockeyWA\icehockeyWA\obj\Debug\Entrance.g.i.cs
-H:\GitHub\icehockeyWA\icehockeyWA\icehockeyWA\obj\Debug\Log.g.i.cs
-H:\GitHub\icehockeyWA\icehockeyWA\icehockeyWA\obj\Debug\Game.g.i.cs
-H:\GitHub\icehockeyWA\icehockeyWA\icehockeyWA\obj\Debug\Notes.g.i.cs
-H:\GitHub\icehockeyWA\icehockeyWA\icehockeyWA\obj\Debug\OtherSettings.g.i.cs
-H:\GitHub\icehockeyWA\icehockeyWA\icehockeyWA\obj\Debug\Penalty.g.i.cs
-H:\GitHub\icehockeyWA\icehockeyWA\icehockeyWA\obj\Debug\PlayerNumber.g.i.cs
-H:\GitHub\icehockeyWA\icehockeyWA\icehockeyWA\obj\Debug\PostGame.g.i.cs
-H:\GitHub\icehockeyWA\icehockeyWA\icehockeyWA\obj\Debug\SelectGame.g.i.cs
-H:\GitHub\icehockeyWA\icehockeyWA\icehockeyWA\obj\Debug\icehockeyWA.g.resources
-H:\GitHub\icehockeyWA\icehockeyWA\icehockeyWA\obj\Debug\icehockeyWA.dll
-H:\GitHub\icehockeyWA\icehockeyWA\icehockeyWA\obj\Debug\icehockeyWA.pdb
-H:\GitHub\icehockeyWA\icehockeyWA\icehockeyWA\obj\Debug\XapCacheFile.xml
+C:\Users\041309786\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\Bin\Debug\ApplicationIcon.png
+C:\Users\041309786\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\Bin\Debug\Background.png
+C:\Users\041309786\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\Bin\Debug\icehockeyWA.dll
+C:\Users\041309786\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\Bin\Debug\icehockeyWA.pdb
+C:\Users\041309786\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\Bin\Debug\AppManifest.xaml
+C:\Users\041309786\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\Bin\Debug\icehockeyWA.xap
+C:\Users\041309786\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Users\041309786\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\Bin\Debug\Microsoft.Phone.Controls.Toolkit.pdb
+C:\Users\041309786\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\Bin\Debug\Microsoft.Phone.Controls.Toolkit.xml
+C:\Users\041309786\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\Bin\Debug\Microsoft.Phone.Controls.xml
+C:\Users\041309786\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\App.g.i.cs
+C:\Users\041309786\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\Assist.g.i.cs
+C:\Users\041309786\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\ChangeGoalie.g.i.cs
+C:\Users\041309786\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\Entrance.g.i.cs
+C:\Users\041309786\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\Log.g.i.cs
+C:\Users\041309786\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\Game.g.i.cs
+C:\Users\041309786\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\Notes.g.i.cs
+C:\Users\041309786\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\OtherSettings.g.i.cs
+C:\Users\041309786\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\Penalty.g.i.cs
+C:\Users\041309786\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\PlayerNumber.g.i.cs
+C:\Users\041309786\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\PostGame.g.i.cs
+C:\Users\041309786\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\SelectGame.g.i.cs
+C:\Users\041309786\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\icehockeyWA.g.resources
+C:\Users\041309786\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\icehockeyWA.dll
+C:\Users\041309786\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\icehockeyWA.pdb
+C:\Users\041309786\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\XapCacheFile.xml
