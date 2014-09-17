@@ -20,16 +20,19 @@ namespace icehockeyWA
             InitializeComponent();
         }
 
+        /* By Jinho
+         * Navigation service update
+         * */
         private void BackBtn_Click(object sender, System.Windows.RoutedEventArgs e)
         {
         	// TODO: Add event handler implementation here.
-			NavigationService.Navigate(new Uri("/PlayerNumber.xaml", UriKind.Relative));
+            NavigationService.GoBack();			
         }
 
         private void NextBtn_Click(object sender, System.Windows.RoutedEventArgs e)
         {
         	// TODO: Add event handler implementation here.
-			NavigationService.Navigate(new Uri("/Game.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/Game.xaml", UriKind.Relative));
         }
     }
 }

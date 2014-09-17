@@ -44,8 +44,8 @@ namespace icehockeyWA
         //Timer event handler
         void TimerTick(object sender, EventArgs e)
         {
-            time = time - second;
-            TimerBtn.Content = time.ToString();     
+            time = time - second;        
+            TimerBtn.Content = time.Minutes + ":" + time.Seconds;            
         }
 
         private void LeftShotBtn_Click(object sender, System.Windows.RoutedEventArgs e)
