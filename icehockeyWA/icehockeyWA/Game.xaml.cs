@@ -16,19 +16,37 @@ namespace icehockeyWA
 {
     public partial class Game : PhoneApplicationPage
     {
+        /* By Jinho
+         * */
+        //Declare timer, time
         static DispatcherTimer timer;
+        static TimeSpan time;
+        static TimeSpan second;        
+
         // Constructor
         public Game()
         {
             InitializeComponent();
-            timer = new DispatcherTimer();
-            timer.Interval = TimeSpan.FromSeconds(2);
-            //timer.Tick += new EventHandler(timer_Tick);
 
-            timer.Start();            
+            //Initialize timer
+            timer = new DispatcherTimer();
+            timer.Interval = new TimeSpan(0, 0, 1);            
+            timer.Tick += new EventHandler(TimerTick);
+            
+            //Initialize time
+            time = new TimeSpan(0, 20, 0);
+            second = new TimeSpan(0, 0, 1);
         }
 
-        
+        /* By Jinho
+         * Timer test
+         * */
+        //Timer event handler
+        void TimerTick(object sender, EventArgs e)
+        {
+            time = time - second;
+            TimerBtn.Content = time.ToString();     
+        }
 
         private void LeftShotBtn_Click(object sender, System.Windows.RoutedEventArgs e)
         {
@@ -68,6 +86,23 @@ namespace icehockeyWA
         {
         	// TODO: Add event handler implementation here.
 			NavigationService.Navigate(new Uri("/OtherSettings.xaml", UriKind.Relative));
+        }
+
+        /* By Jinho
+         * Timer button event
+         * */
+        private void TimerBtn_Click(object sender, RoutedEventArgs e)
+        {
+            if (timer.IsEnabled == true)
+            {
+                timer.Stop();
+                TimerBtn.Foreground = new SolidColorBrush(Colors.Green);
+            }
+            else
+            {
+                timer.Start();
+                TimerBtn.Foreground = new SolidColorBrush(Colors.Red);
+            }
         }
     }
 }
