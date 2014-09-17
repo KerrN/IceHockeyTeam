@@ -32,10 +32,11 @@
             <Button FontSize="40" Height="107" x:Name="LeftPenaltyBtn" Content="Penalty" Width="225" Click="LeftPenaltyBtn_Click"/>
 		</StackPanel>
 		<StackPanel Grid.Column="1" VerticalAlignment="Center">
-            <TextBox Background="#FF0D0E0E" FontSize="40" Foreground="White" Width="225" Height="107" x:Name="ScoreTb" Text="0 - 0" TextAlignment="Center"/>
-			<TextBox Background="#FF0D0E0E" FontSize="40" Foreground="White" Width="225" Height="107" x:Name="PeriodTb" Text="Period 1" TextAlignment="Center"/>
-            <TextBox Background="#FF0D0E0E" FontSize="40" Foreground="White" Width="225" Height="107" x:Name="TimeTb" Text="20:00" TextAlignment="Center"/>
-            <Button FontSize="40" Width="225" Height="107" x:Name="OthersBtn" Content="Others" Click="OthersBtn_Click"/>
+            <Image Width="240" Height="60" Source="Images/icewa-logo.png"/>
+            <TextBox Background="#FF0D0E0E" FontSize="40" Foreground="White" Width="225" Height="90" x:Name="ScoreTb" Text="0 - 0" TextAlignment="Center"/>
+			<TextBox Background="#FF0D0E0E" FontSize="40" Foreground="White" Width="225" Height="90" x:Name="PeriodTb" Text="Period 1" TextAlignment="Center"/>
+            <Button FontSize="40" Width="225" Height="90" x:Name="TimerBtn" Content="20:00"/>
+            <Button FontSize="40" Width="225" Height="90" x:Name="OthersBtn" Content="Others" Click="OthersBtn_Click"/>
 		</StackPanel>
 		<StackPanel Grid.Column="2" VerticalAlignment="Center">
 			<TextBox Background="#FF0D0E0E"  FontSize="30" Foreground="Blue" Height="107" x:Name="AwayTeamTb" Text="Away Team" TextAlignment="Center" Width="225" />
