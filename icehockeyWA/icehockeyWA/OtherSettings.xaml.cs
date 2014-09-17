@@ -31,6 +31,24 @@ namespace icehockeyWA
         	// TODO: Add event handler implementation here.
 			NavigationService.Navigate(new Uri("/Log.xaml", UriKind.Relative));
         }
+
+        private void CancelGameBtn_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+        	// TODO: Add event handler implementation here.
+			/* By Jinho
+			* Cancel game button event
+			* */
+			MessageBoxResult mbr = MessageBox.Show("Are you sure?", "Cancel Game", MessageBoxButton.OKCancel);
+			
+			if (mbr == MessageBoxResult.OK) 
+			{
+				while(NavigationService.CanGoBack == true)
+				{
+					NavigationService.RemoveBackEntry();
+				}
+				NavigationService.Navigate(new Uri("/Entrance.xaml", UriKind.Relative));
+			}			
+        }
         
     }
 }
