@@ -73,15 +73,17 @@
     <Compile Include="Entrance.xaml.cs">
       <DependentUpon>Entrance.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Game.cs" />
     <Compile Include="Log.xaml.cs">
       <DependentUpon>Log.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Game.xaml.cs">
-      <DependentUpon>Game.xaml</DependentUpon>
+    <Compile Include="GameScreen.xaml.cs">
+      <DependentUpon>GameScreen.xaml</DependentUpon>
     </Compile>
     <Compile Include="Notes.xaml.cs">
       <DependentUpon>Notes.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Official.cs" />
     <Compile Include="OtherSettings.xaml.cs">
       <DependentUpon>OtherSettings.xaml</DependentUpon>
     </Compile>
@@ -100,6 +102,7 @@
     <Compile Include="SelectGame.xaml.cs">
       <DependentUpon>SelectGame.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Team.cs" />
     <Compile Include="TimeDataSource.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -123,7 +126,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Game.xaml">
+    <Page Include="GameScreen.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

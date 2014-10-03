@@ -50,7 +50,7 @@ namespace icehockeyWA
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/Game.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/GameScreen.xaml", UriKind.Relative));
         }
     }
 }

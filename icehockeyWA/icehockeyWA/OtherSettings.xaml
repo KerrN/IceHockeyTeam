@@ -46,7 +46,7 @@
             <Button Grid.Column="0" Grid.Row="1" Content="Extra Time" Width="300" Height="125" x:Name="ExtraTimeBtn"/>
             <Button Grid.Column="1" Grid.Row="1" Content="Shoot Out" Width="300" Height="125" x:Name="ShootOutBtn"/>
 			<Button Grid.Column="0" Grid.Row="2" Content="Log" Width="300" Height="125" x:Name="LogBtn" Click="LogBtn_Click"/>
-			<Button Grid.Column="1" Grid.Row="2" Content="Cancel Game" Width="300" Height="125" x:Name="CancelGameBtn" Background="#A8FF0000" Click="CancelGameBtn_Click"/>
+			<Button Grid.Column="1" Grid.Row="2" Content="Cancel Game" Width="300" Height="125" x:Name="CancelGameBtn" Background="#A8FF0000" Click="CancelGameBtn_Click" />
         </Grid>
     </Grid>
 </phone:PhoneApplicationPage>
