@@ -1,5 +1,5 @@
 ﻿<phone:PhoneApplicationPage 
-    x:Class="icehockeyWA.GameScreen"
+    x:Class="icehockeyWA.Game"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
@@ -26,20 +26,20 @@
         </Grid.ColumnDefinitions>
 		
 		<StackPanel Grid.Column="0" VerticalAlignment="Center">
-		 	<TextBox x:Name="HomeTeamTb" Text="{Binding Name}" Width="225" Height="107" Background="#FF0D0E0E" Foreground="Red" FontSize="30" TextAlignment="Center"/>
+		 	<TextBox x:Name="HomeTeamTb" Text="Home Team" Width="225" Height="107" Background="#FF0D0E0E" Foreground="Red" FontSize="30" TextAlignment="Center"/>
             <Button FontSize="40" Height="107" x:Name="LeftShotBtn" Content="Shot" Width="225" Click="LeftShotBtn_Click"/>
             <Button FontSize="40" Height="107" x:Name="LeftGoalBtn" Content="Goal" Width="225" Click="LeftGoalBtn_Click"/>
             <Button FontSize="40" Height="107" x:Name="LeftPenaltyBtn" Content="Penalty" Width="225" Click="LeftPenaltyBtn_Click"/>
 		</StackPanel>
 		<StackPanel Grid.Column="1" VerticalAlignment="Center">
             <Image Width="240" Height="60" Source="Images/icewa-logo.png"/>
-            <TextBox Background="#FF0D0E0E" FontSize="40" Foreground="White" Width="225" Height="90" x:Name="ScoreTb" Text="{Binding CurrentScore}" TextAlignment="Center"/>
-			<TextBox Background="#FF0D0E0E" FontSize="40" Foreground="White" Width="225" Height="90" x:Name="PeriodTb" Text="{Binding CurrentPeriod}" TextAlignment="Center"/>
+            <TextBox Background="#FF0D0E0E" FontSize="40" Foreground="White" Width="225" Height="90" x:Name="ScoreTb" Text="0 - 0" TextAlignment="Center"/>
+			<TextBox Background="#FF0D0E0E" FontSize="40" Foreground="White" Width="225" Height="90" x:Name="PeriodTb" Text="Period 1" TextAlignment="Center"/>
             <Button FontSize="40" Width="225" Height="90" x:Name="TimerBtn" Content="20:00" Click="TimerBtn_Click" Foreground="Green" />
             <Button FontSize="40" Width="225" Height="90" x:Name="OthersBtn" Content="Others" Click="OthersBtn_Click"/>
 		</StackPanel>
 		<StackPanel Grid.Column="2" VerticalAlignment="Center">
-			<TextBox Background="#FF0D0E0E"  FontSize="30" Foreground="Blue" Height="107" x:Name="AwayTeamTb" Text="{Binding Name}" TextAlignment="Center" Width="225" />
+			<TextBox Background="#FF0D0E0E"  FontSize="30" Foreground="Blue" Height="107" x:Name="AwayTeamTb" Text="Away Team" TextAlignment="Center" Width="225" />
 			<Button Width="225" Height="107" x:Name="RightShotBtn" Content="Shot" FontSize="40" Click="RightShotBtn_Click"/>
 			<Button Width="225" Height="107" x:Name="RightGoalBtn" Content="Goal" FontSize="40" Click="RightGoalBtn_Click"/>
 		    <Button Width="225" Height="107" x:Name="RIghtPenaltyBtn" Content="Penalty" FontSize="40" Click="RIghtPenaltyBtn_Click"/> 

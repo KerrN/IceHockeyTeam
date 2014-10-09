@@ -14,19 +14,17 @@ using System.Windows.Threading;
 
 namespace icehockeyWA
 {
-    public partial class GameScreen : PhoneApplicationPage
+    public partial class Game : PhoneApplicationPage
     {
         /* By Jinho
          * */
         //Declare timer, time
         static DispatcherTimer timer;
         static TimeSpan time;
-        static TimeSpan second;
-
-        public Game currentGame;
+        static TimeSpan second;        
 
         // Constructor
-        public GameScreen()
+        public Game()
         {
             InitializeComponent();
 
@@ -38,7 +36,6 @@ namespace icehockeyWA
             //Initialize time
             time = new TimeSpan(0, 20, 0);
             second = new TimeSpan(0, 0, 1);
-            createGame();
         }
 
         /* By Jinho
@@ -106,21 +103,6 @@ namespace icehockeyWA
                 timer.Start();
                 TimerBtn.Foreground = new SolidColorBrush(Colors.Red);
             }
-        }
-
-        public void createGame()
-        {
-            currentGame = new Game(123, System.DateTime.Today, "Location", "Super League");
-            currentGame.setHomeTeam(185, "MyHome Team", 12, "MyManager Name");
-            currentGame.setAwayTeam(456, "YourAway Team", 390, "YourManager Name");
-
-            currentGame.beginGame();
-            PeriodTb.DataContext = currentGame;
-            ScoreTb.DataContext = currentGame;
-
-            currentGame.homeTeam.addGoal();
-            HomeTeamTb.DataContext = currentGame.homeTeam;
-            AwayTeamTb.DataContext = currentGame.awayTeam;
         }
     }
 }

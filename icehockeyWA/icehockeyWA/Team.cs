@@ -9,10 +9,11 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 
 namespace icehockeyWA
 {
-    public class Team
+    public class Team : INotifyPropertyChanged
     {
         private int teamID;
         private string name;
@@ -25,6 +26,13 @@ namespace icehockeyWA
             }
         }
         private int goalCounter;
+        public int GoalCounter
+        {
+            get
+            {
+                return goalCounter;
+            }
+        }
         private int shotCounter;
         private int penaltyCounter;
         //private Player[] players;
@@ -63,6 +71,13 @@ namespace icehockeyWA
         public int getGoalCounter()
         {
             return goalCounter;
+        }
+
+        public void addGoal()
+        {
+            goalCounter += 1;
+
+            PropChanged("GoalCounter");
         }
 
         public int getPenaltyCounter()
@@ -127,6 +142,16 @@ namespace icehockeyWA
         //    }
         //    return foundPlayer;
         //}
+
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        private void PropChanged(string propName)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(propName));
+            }
+        }
 
     }
 }

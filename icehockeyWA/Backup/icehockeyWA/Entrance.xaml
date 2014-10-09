@@ -1,0 +1,59 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="icehockeyWA.Entrance"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="480"
+    SupportedOrientations="Landscape" Orientation="Landscape"
+    shell:SystemTray.IsVisible="False">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="130"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0">
+        	<Image Width="550" Height="125" Source="Images/icewa-logo.png"/>
+		</StackPanel>
+		
+		<!-- Edited by Jinho
+			Added Exit button, Changed all buttons name, Craeted grid column definitions
+		-->
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="400"/>
+				<ColumnDefinition Width="*"/>
+			</Grid.ColumnDefinitions>
+			<StackPanel x:Name="MenuPanel" Grid.Column="0">
+				<Button Width="240" Height="70" Content="Setup Game" x:Name="SetupGameBtn" FontFamily="Lucida Sans Unicode" Click="SetupGameBtn_Click" />
+	            <Button Width="240" Height="70" Content="SYNC" x:Name="SyncBtn" FontFamily="Lucida Sans Unicode" />
+	            <Button Width="240" Height="70" Content="Review Game" x:Name="ReviewGameBtn" FontFamily="Lucida Sans Unicode" />
+	            <Button Width="240" Height="70" Content="Manage Teams" x:Name="ManageTeamsBtn" FontFamily="Lucida Sans Unicode" />
+				<Button Width="240" Height="70" Content="Exit" x:Name="ExitBtn" FontFamily="Lucida Sans Unicode" />
+			</StackPanel>
+			<Image Grid.Column="1" Width="260" Height="320" Source="Images/icehockey.jpg"/>
+        </Grid>
+    </Grid>
+	
+    <!--Sample code showing usage of ApplicationBar-->
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Button 1"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
+                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+</phone:PhoneApplicationPage>

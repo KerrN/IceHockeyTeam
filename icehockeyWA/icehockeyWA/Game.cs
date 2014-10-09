@@ -10,24 +10,33 @@ using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 
 
 namespace icehockeyWA
 {
-    public class Game
+    public class Game : INotifyPropertyChanged
     {
         private int gameID;
         public Team homeTeam;
         public Team awayTeam;
         private DateTime gameTime;
-        private String venue;
-        private String division;
+        private string venue;
+        private string division;
         private List<Official> officials;
-        private String notes;
+        private string notes;
 //      private Event[] events;
-        private String currentPeriod;
+        private string currentPeriod;
+        public string CurrentPeriod
+        {
+            get
+            {
+                return currentPeriod;
+            }
+        }
 
-        public Game(int ID, DateTime time, String venue, String division)
+
+        public Game(int ID, DateTime time, String venue, string division)
         {
             this.gameID = ID;
             this.gameTime = time;
@@ -37,6 +46,24 @@ namespace icehockeyWA
             this.notes = "";
             this.currentPeriod = "Period 0";
             this.officials = new List<Official>();
+        }
+
+        public void beginGame()
+        {
+            if (currentPeriod == "Period 0")
+                currentPeriod = "Period 1";
+
+            PropChanged("CurrentPeriod");
+        }
+
+        public void nextPeriod()
+        {
+            if(currentPeriod == "Period 1")
+                currentPeriod = "Period 2";
+            else if (currentPeriod == "Period 2")
+                currentPeriod = "Period 3";
+
+            PropChanged("CurrentPeriod");
         }
 
         public void setHomeTeam(int teamID, string teamName, int managerID, string managerName)
@@ -53,6 +80,17 @@ namespace icehockeyWA
         {
             officials.Add(new Official(officialID, name, type));
         }
+
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        private void PropChanged(string propName)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(propName));
+            }
+        }
+
     }
 
 
