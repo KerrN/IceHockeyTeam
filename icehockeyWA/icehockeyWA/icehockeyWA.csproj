@@ -99,6 +99,9 @@
       <DependentUpon>PostGame.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReviewGame.xaml.cs">
+      <DependentUpon>ReviewGame.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SelectGame.xaml.cs">
       <DependentUpon>SelectGame.xaml</DependentUpon>
     </Compile>
@@ -149,6 +152,10 @@
     <Page Include="PostGame.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ReviewGame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="SelectGame.xaml">
       <Generator>MSBuild:Compile</Generator>

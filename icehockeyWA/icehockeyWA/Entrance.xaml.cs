@@ -26,5 +26,11 @@ namespace icehockeyWA
         	// TODO: Add event handler implementation here.
 			NavigationService.Navigate(new Uri("/SelectGame.xaml", UriKind.Relative));
         }
+
+        private void ReviewGameBtn_Click(object sender, RoutedEventArgs e)
+        {
+            // TODO: Add event handler implementation here.
+            NavigationService.Navigate(new Uri("/ReviewGame.xaml", UriKind.Relative));
+        }
     }
 }

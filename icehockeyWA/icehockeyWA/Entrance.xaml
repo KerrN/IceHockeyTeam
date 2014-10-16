@@ -37,7 +37,7 @@
 			<StackPanel x:Name="MenuPanel" Grid.Column="0">
 				<Button Width="240" Height="70" Content="Setup Game" x:Name="SetupGameBtn" FontFamily="Lucida Sans Unicode" Click="SetupGameBtn_Click" />
 	            <Button Width="240" Height="70" Content="SYNC" x:Name="SyncBtn" FontFamily="Lucida Sans Unicode" />
-	            <Button Width="240" Height="70" Content="Review Game" x:Name="ReviewGameBtn" FontFamily="Lucida Sans Unicode" />
+	            <Button Width="240" Height="70" Content="Review Game" x:Name="ReviewGameBtn" FontFamily="Lucida Sans Unicode" Click="ReviewGameBtn_Click" />
 	            <Button Width="240" Height="70" Content="Manage Teams" x:Name="ManageTeamsBtn" FontFamily="Lucida Sans Unicode" />
 				<Button Width="240" Height="70" Content="Exit" x:Name="ExitBtn" FontFamily="Lucida Sans Unicode" />
 			</StackPanel>
