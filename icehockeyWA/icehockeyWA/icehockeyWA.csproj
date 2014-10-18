@@ -70,10 +70,19 @@
     <Compile Include="ChangeGoalie.xaml.cs">
       <DependentUpon>ChangeGoalie.xaml</DependentUpon>
     </Compile>
+    <Compile Include="EditTeam.xaml.cs">
+      <DependentUpon>EditTeam.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Entrance.xaml.cs">
       <DependentUpon>Entrance.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ExtraTime.xaml.cs">
+      <DependentUpon>ExtraTime.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Game.cs" />
+    <Compile Include="Injury.xaml.cs">
+      <DependentUpon>Injury.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Log.xaml.cs">
       <DependentUpon>Log.xaml</DependentUpon>
     </Compile>
@@ -121,9 +130,21 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="EditTeam.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Entrance.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ExtraTime.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Injury.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Log.xaml">
       <Generator>MSBuild:Compile</Generator>

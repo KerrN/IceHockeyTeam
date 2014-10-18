@@ -19,12 +19,11 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <StackPanel Grid.Row="0" Margin="12,17,0,28" Name="TitlePanel">
-            <TextBlock Name="ApplicationTitle" Style="{StaticResource PhoneTextNormalStyle}" Text="MY APPLICATION" />
-        </StackPanel>
+        <StackPanel Grid.Row="0" Margin="12,17,0,28" Name="TitlePanel"></StackPanel>
         <Grid Grid.Row="1" Margin="12,0,12,0" Name="ContentPanel">
             <TextBox Height="185" HorizontalAlignment="Left" Margin="61,0,0,0" Name="textBox1" Text="" VerticalAlignment="Top" Width="601" />
-            <Button Content="Add" Height="95" HorizontalAlignment="Left" Margin="248,191,0,0" Name="Add_but" VerticalAlignment="Top" Width="206" />
+            <Button Content="Add" Height="95" HorizontalAlignment="Left" Margin="492,218,0,0" Name="Add_but" VerticalAlignment="Top" Width="206" />
+            <Button Content="Cancel" Height="95" HorizontalAlignment="Left" Margin="0,224,0,0" Name="button1" VerticalAlignment="Top" Width="206" />
         </Grid>
         <Grid Height="100" Margin="24,50,0,11" Name="grid1">
             <Grid.ColumnDefinitions>
@@ -32,7 +31,6 @@
                 <ColumnDefinition Width="258*" />
             </Grid.ColumnDefinitions>
             <TextBlock Margin="0,-13,42,17" Name="PageTitle" Style="{StaticResource PhoneTextTitle1Style}" Text="NOTES" Width="442" />
-            <Button Click="button2_Click" Content="GO" Grid.Column="1" Height="72" HorizontalAlignment="Left" Margin="108,6,0,0" Name="Go_but" VerticalAlignment="Top" Width="96" />
         </Grid>
     </Grid>
 </phone:PhoneApplicationPage>
