@@ -106,3 +106,7 @@ C:\Users\041402463\Documents\github\IceHockeyTeam\icehockeyWA\icehockeyWA\Bin\De
 C:\Users\041402463\Documents\github\IceHockeyTeam\icehockeyWA\icehockeyWA\Bin\Debug\icehockeyWA.xap
 C:\Users\041402463\Documents\github\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\XapCacheFile.xml
 C:\Users\041402463\Documents\github\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\ReviewGame.g.i.cs
+C:\Users\041402463\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\EditTeam.g.i.cs
+C:\Users\041402463\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\ExtraTime.g.i.cs
+C:\Users\041402463\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\Injury.g.i.cs
+C:\Users\041402463\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\PenaltyOther.g.i.cs

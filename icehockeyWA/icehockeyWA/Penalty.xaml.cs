@@ -22,7 +22,7 @@ namespace icehockeyWA
 
         private void ConfirmBtn_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/Game.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/GameScreen.xaml", UriKind.Relative));
         }
 
         private void AddHomePenaltyBtn_Click(object sender, System.Windows.RoutedEventArgs e)

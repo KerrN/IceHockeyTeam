@@ -32,7 +32,7 @@ namespace icehockeyWA
         private void NextBtn_Click(object sender, System.Windows.RoutedEventArgs e)
         {
         	// TODO: Add event handler implementation here.
-            NavigationService.Navigate(new Uri("/Game.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/GameScreen.xaml", UriKind.Relative));
         }
     }
 }

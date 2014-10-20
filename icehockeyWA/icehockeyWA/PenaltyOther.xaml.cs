@@ -13,16 +13,11 @@ using Microsoft.Phone.Controls;
 
 namespace icehockeyWA
 {
-    public partial class ExtraTime : PhoneApplicationPage
+    public partial class PenaltyOther : PhoneApplicationPage
     {
-        public ExtraTime()
+        public PenaltyOther()
         {
             InitializeComponent();
-        }
-
-        private void listBox1_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
         }
     }
 }

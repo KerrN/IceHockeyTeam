@@ -100,6 +100,9 @@
     <Compile Include="Penalty.xaml.cs">
       <DependentUpon>Penalty.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PenaltyOther.xaml.cs">
+      <DependentUpon>PenaltyOther.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PlayerDataSource.cs" />
     <Compile Include="PlayerNumber.xaml.cs">
       <DependentUpon>PlayerNumber.xaml</DependentUpon>
@@ -165,6 +168,10 @@
     <Page Include="Penalty.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PenaltyOther.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="PlayerNumber.xaml">
       <Generator>MSBuild:Compile</Generator>
