@@ -64,60 +64,60 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Assist.xaml.cs">
-      <DependentUpon>Assist.xaml</DependentUpon>
+    <Compile Include="Views\AssistView.xaml.cs">
+      <DependentUpon>AssistView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ChangeGoalie.xaml.cs">
-      <DependentUpon>ChangeGoalie.xaml</DependentUpon>
+    <Compile Include="Views\ChangeGoalieView.xaml.cs">
+      <DependentUpon>ChangeGoalieView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="EditTeam.xaml.cs">
-      <DependentUpon>EditTeam.xaml</DependentUpon>
+    <Compile Include="Views\EditTeamView.xaml.cs">
+      <DependentUpon>EditTeamView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Entrance.xaml.cs">
-      <DependentUpon>Entrance.xaml</DependentUpon>
+    <Compile Include="Views\EntranceView.xaml.cs">
+      <DependentUpon>EntranceView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ExtraTime.xaml.cs">
-      <DependentUpon>ExtraTime.xaml</DependentUpon>
+    <Compile Include="Views\ExtraTimeView.xaml.cs">
+      <DependentUpon>ExtraTimeView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Game.cs" />
-    <Compile Include="Injury.xaml.cs">
-      <DependentUpon>Injury.xaml</DependentUpon>
+    <Compile Include="Models\Game.cs" />
+    <Compile Include="Views\InjuryView.xaml.cs">
+      <DependentUpon>InjuryView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Log.xaml.cs">
-      <DependentUpon>Log.xaml</DependentUpon>
+    <Compile Include="Views\LogView.xaml.cs">
+      <DependentUpon>LogView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="GameScreen.xaml.cs">
-      <DependentUpon>GameScreen.xaml</DependentUpon>
+    <Compile Include="Views\GameView.xaml.cs">
+      <DependentUpon>GameView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Notes.xaml.cs">
-      <DependentUpon>Notes.xaml</DependentUpon>
+    <Compile Include="Views\NotesView.xaml.cs">
+      <DependentUpon>NotesView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Official.cs" />
-    <Compile Include="OtherSettings.xaml.cs">
-      <DependentUpon>OtherSettings.xaml</DependentUpon>
+    <Compile Include="Models\Official.cs" />
+    <Compile Include="Views\OtherSettingsView.xaml.cs">
+      <DependentUpon>OtherSettingsView.xaml</DependentUpon>
     </Compile>
     <Compile Include="PenaltyDataSource.cs" />
-    <Compile Include="Penalty.xaml.cs">
-      <DependentUpon>Penalty.xaml</DependentUpon>
+    <Compile Include="Views\PenaltyView.xaml.cs">
+      <DependentUpon>PenaltyView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PenaltyOther.xaml.cs">
-      <DependentUpon>PenaltyOther.xaml</DependentUpon>
+    <Compile Include="Views\PenaltyOtherView.xaml.cs">
+      <DependentUpon>PenaltyOtherView.xaml</DependentUpon>
     </Compile>
     <Compile Include="PlayerDataSource.cs" />
-    <Compile Include="PlayerNumber.xaml.cs">
-      <DependentUpon>PlayerNumber.xaml</DependentUpon>
+    <Compile Include="Views\PlayerNumberView.xaml.cs">
+      <DependentUpon>PlayerNumberView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PostGame.xaml.cs">
-      <DependentUpon>PostGame.xaml</DependentUpon>
+    <Compile Include="Views\PostGameView.xaml.cs">
+      <DependentUpon>PostGameView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReviewGame.xaml.cs">
-      <DependentUpon>ReviewGame.xaml</DependentUpon>
+    <Compile Include="Views\ReviewGameView.xaml.cs">
+      <DependentUpon>ReviewGameView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SelectGame.xaml.cs">
-      <DependentUpon>SelectGame.xaml</DependentUpon>
+    <Compile Include="Views\SelectGameView.xaml.cs">
+      <DependentUpon>SelectGameView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Team.cs" />
+    <Compile Include="Models\Team.cs" />
     <Compile Include="TimeDataSource.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -125,67 +125,67 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
-    <Page Include="Assist.xaml">
+    <Page Include="Views\AssistView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="ChangeGoalie.xaml">
+    <Page Include="Views\ChangeGoalieView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="EditTeam.xaml">
+    <Page Include="Views\EditTeamView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Entrance.xaml">
+    <Page Include="Views\EntranceView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="ExtraTime.xaml">
+    <Page Include="Views\ExtraTimeView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Injury.xaml">
+    <Page Include="Views\InjuryView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Log.xaml">
+    <Page Include="Views\LogView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="GameScreen.xaml">
+    <Page Include="Views\GameView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Notes.xaml">
+    <Page Include="Views\NotesView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="OtherSettings.xaml">
+    <Page Include="Views\OtherSettingsView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Penalty.xaml">
+    <Page Include="Views\PenaltyView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="PenaltyOther.xaml">
+    <Page Include="Views\PenaltyOtherView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PlayerNumber.xaml">
+    <Page Include="Views\PlayerNumberView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="PostGame.xaml">
+    <Page Include="Views\PostGameView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="ReviewGame.xaml">
+    <Page Include="Views\ReviewGameView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="SelectGame.xaml">
+    <Page Include="Views\SelectGameView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -195,17 +195,20 @@
     <None Include="Properties\WMAppManifest.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ApplicationIcon.png">
+    <Content Include="Resources\ApplicationIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Background.png">
+    <Content Include="Resources\Background.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="SplashScreenImage.jpg" />
+    <Content Include="Resources\SplashScreenImage.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\icehockey.jpg" />
-    <Resource Include="Images\icewa-logo.png" />
+    <Resource Include="Resources\icehockey.jpg" />
+    <Resource Include="Resources\icewa-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ViewModels\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
