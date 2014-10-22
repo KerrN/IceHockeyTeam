@@ -64,6 +64,22 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModels\AssistViewModel.cs" />
+    <Compile Include="ViewModels\ChangeGoalieViewModel.cs" />
+    <Compile Include="ViewModels\EditTeamViewModel.cs" />
+    <Compile Include="ViewModels\EntranceViewModel.cs" />
+    <Compile Include="ViewModels\ExtraTimeViewModel.cs" />
+    <Compile Include="ViewModels\GameViewModel.cs" />
+    <Compile Include="ViewModels\InjuryViewModel.cs" />
+    <Compile Include="ViewModels\LogViewModel.cs" />
+    <Compile Include="ViewModels\NotesViewModel.cs" />
+    <Compile Include="ViewModels\OtherSettingsViewModel.cs" />
+    <Compile Include="ViewModels\PenaltyOtherViewModel.cs" />
+    <Compile Include="ViewModels\PenaltyViewModel.cs" />
+    <Compile Include="ViewModels\PlayerNumberViewModel.cs" />
+    <Compile Include="ViewModels\PostGameViewModel.cs" />
+    <Compile Include="ViewModels\ReviewGameViewModel.cs" />
+    <Compile Include="ViewModels\SelectGameViewModel.cs" />
     <Compile Include="Views\AssistView.xaml.cs">
       <DependentUpon>AssistView.xaml</DependentUpon>
     </Compile>
@@ -207,9 +223,7 @@
     <Resource Include="Resources\icehockey.jpg" />
     <Resource Include="Resources\icewa-logo.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ViewModels\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
