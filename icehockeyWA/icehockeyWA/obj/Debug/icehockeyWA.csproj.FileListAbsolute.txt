@@ -126,7 +126,6 @@ C:\Users\Jinho\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\
 C:\Users\Jinho\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\Views\PenaltyOtherView.g.i.cs
 C:\Users\041402463\Documents\github\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\Views\AssistView.g.i.cs
 C:\Users\041402463\Documents\github\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\Views\ChangeGoalieView.g.i.cs
-C:\Users\041402463\Documents\github\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\Views\EditTeamView.g.i.cs
 C:\Users\041402463\Documents\github\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\Views\EntranceView.g.i.cs
 C:\Users\041402463\Documents\github\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\Views\ExtraTimeView.g.i.cs
 C:\Users\041402463\Documents\github\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\Views\InjuryView.g.i.cs
@@ -144,3 +143,4 @@ C:\Users\041402463\Documents\github\IceHockeyTeam\icehockeyWA\icehockeyWA\Bin\De
 C:\Users\041402463\Documents\github\IceHockeyTeam\icehockeyWA\icehockeyWA\Bin\Debug\Resources\Background.png
 C:\Users\041402463\Documents\github\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\ConfirmGame.g.i.cs
 C:\Users\041402463\Documents\github\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\Views\editTeam.g.i.cs
+C:\Users\041402463\Documents\github\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\Views\ConfirmPlayersView.g.i.cs
