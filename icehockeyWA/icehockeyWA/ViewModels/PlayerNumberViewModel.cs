@@ -15,5 +15,6 @@ namespace icehockeyWA.ViewModels
     public class PlayerNumberViewModel : INotifyPropertyChanged
     {
 
+        public event PropertyChangedEventHandler PropertyChanged;
     }
 }

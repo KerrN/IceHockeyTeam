@@ -15,5 +15,6 @@ namespace icehockeyWA.ViewModels
     public class ExtraTimeViewModel : INotifyPropertyChanged
     {
 
+        public event PropertyChangedEventHandler PropertyChanged;
     }
 }

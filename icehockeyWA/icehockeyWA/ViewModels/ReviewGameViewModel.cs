@@ -14,6 +14,14 @@ namespace icehockeyWA.ViewModels
 {
     public class ReviewGameViewModel : INotifyPropertyChanged
     {
+        // Summary:
+        //     Occurs when a property value changes.
+        event PropertyChangedEventHandler PropertyChanged;
 
+        event PropertyChangedEventHandler INotifyPropertyChanged.PropertyChanged
+        {
+            add { throw new NotImplementedException(); }
+            remove { throw new NotImplementedException(); }
+        }
     }
 }

@@ -15,5 +15,6 @@ namespace icehockeyWA.ViewModels
     public class EntranceViewModel : INotifyPropertyChanged
     {
 
+        public event PropertyChangedEventHandler PropertyChanged;
     }
 }

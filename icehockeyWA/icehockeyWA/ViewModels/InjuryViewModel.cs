@@ -15,5 +15,6 @@ namespace icehockeyWA.ViewModels
     public class InjuryViewModel : INotifyPropertyChanged
     {
 
+        public event PropertyChangedEventHandler PropertyChanged;
     }
 }

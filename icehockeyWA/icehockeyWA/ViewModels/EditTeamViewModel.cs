@@ -15,5 +15,6 @@ namespace icehockeyWA.ViewModels
     public class EditTeamViewModel : INotifyPropertyChanged
     {
 
+        public event PropertyChangedEventHandler PropertyChanged;
     }
 }

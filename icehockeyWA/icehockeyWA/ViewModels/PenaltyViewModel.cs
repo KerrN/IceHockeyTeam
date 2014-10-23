@@ -15,5 +15,6 @@ namespace icehockeyWA.ViewModels
     public class PenaltyViewModel : INotifyPropertyChanged
     {
 
+        public event PropertyChangedEventHandler PropertyChanged;
     }
 }

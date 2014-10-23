@@ -15,5 +15,6 @@ namespace icehockeyWA.ViewModels
     public class NotesViewModel : INotifyPropertyChanged
     {
 
+        public event PropertyChangedEventHandler PropertyChanged;
     }
 }

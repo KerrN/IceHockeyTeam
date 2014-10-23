@@ -15,5 +15,6 @@ namespace icehockeyWA.ViewModels
     public class AssistViewModel : INotifyPropertyChanged
     {
 
+        public event PropertyChangedEventHandler PropertyChanged;
     }
 }

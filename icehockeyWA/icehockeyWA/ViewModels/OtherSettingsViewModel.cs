@@ -15,5 +15,6 @@ namespace icehockeyWA.ViewModels
     public class OtherSettingsViewModel : INotifyPropertyChanged
     {
 
+        public event PropertyChangedEventHandler PropertyChanged;
     }
 }

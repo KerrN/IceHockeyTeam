@@ -15,5 +15,6 @@ namespace icehockeyWA.ViewModels
     public class ChangeGoalieViewModel : INotifyPropertyChanged
     {
 
+        public event PropertyChangedEventHandler PropertyChanged;
     }
 }
