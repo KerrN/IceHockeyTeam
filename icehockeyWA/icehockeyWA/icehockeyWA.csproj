@@ -64,9 +64,6 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ConfirmGame.xaml.cs">
-      <DependentUpon>ConfirmGame.xaml</DependentUpon>
-    </Compile>
     <Compile Include="ViewModels\AssistViewModel.cs" />
     <Compile Include="ViewModels\ChangeGoalieViewModel.cs" />
     <Compile Include="ViewModels\EditTeamViewModel.cs" />
@@ -89,11 +86,14 @@
     <Compile Include="Views\ChangeGoalieView.xaml.cs">
       <DependentUpon>ChangeGoalieView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\editTeam.xaml.cs">
-      <DependentUpon>editTeam.xaml</DependentUpon>
+    <Compile Include="Views\ConfirmGameView.xaml.cs">
+      <DependentUpon>ConfirmGameView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\ConfirmPlayersView.xaml.cs">
       <DependentUpon>ConfirmPlayersView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EditTeamView.xaml.cs">
+      <DependentUpon>EditTeamView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\EntranceView.xaml.cs">
       <DependentUpon>EntranceView.xaml</DependentUpon>
@@ -147,10 +147,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
-    <Page Include="ConfirmGame.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Views\AssistView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -159,13 +155,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\editTeam.xaml">
+    <Page Include="Views\ConfirmGameView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\ConfirmPlayersView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\EditTeamView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\EntranceView.xaml">
       <Generator>MSBuild:Compile</Generator>

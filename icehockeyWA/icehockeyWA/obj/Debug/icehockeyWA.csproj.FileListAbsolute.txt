@@ -141,6 +141,6 @@ C:\Users\041402463\Documents\github\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\De
 C:\Users\041402463\Documents\github\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\Views\SelectGameView.g.i.cs
 C:\Users\041402463\Documents\github\IceHockeyTeam\icehockeyWA\icehockeyWA\Bin\Debug\Resources\ApplicationIcon.png
 C:\Users\041402463\Documents\github\IceHockeyTeam\icehockeyWA\icehockeyWA\Bin\Debug\Resources\Background.png
-C:\Users\041402463\Documents\github\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\ConfirmGame.g.i.cs
-C:\Users\041402463\Documents\github\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\Views\editTeam.g.i.cs
 C:\Users\041402463\Documents\github\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\Views\ConfirmPlayersView.g.i.cs
+C:\Users\041402463\Documents\github\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\Views\ConfirmGameView.g.i.cs
+C:\Users\041402463\Documents\github\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\Views\EditTeamView.g.i.cs
