@@ -13,9 +13,9 @@ using Microsoft.Phone.Controls;
 
 namespace icehockeyWA.Views
 {
-    public partial class EditTeamView : PhoneApplicationPage
+    public partial class ConfirmPlayersView : PhoneApplicationPage
     {
-        public EditTeamView()
+        public ConfirmPlayersView()
         {
             InitializeComponent();
         }

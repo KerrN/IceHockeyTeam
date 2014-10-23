@@ -11,11 +11,12 @@ using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
 
-namespace icehockeyWA
+namespace icehockeyWA.Views
 {
-    public partial class ConfirmGame : PhoneApplicationPage
+    public partial class EditTeamView : PhoneApplicationPage
     {
-        public ConfirmGame()
+        // Constructor
+        public EditTeamView ()
         {
             InitializeComponent();
         }
