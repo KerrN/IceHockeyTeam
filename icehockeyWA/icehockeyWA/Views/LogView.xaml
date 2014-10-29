@@ -25,7 +25,13 @@
             </shell:ApplicationBar.MenuItems>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>-->
-    <Grid Background="Transparent" Name="LayoutRoot">
+    <Grid Name="LayoutRoot">
+
+        <!--Adding Background to View - Sean M -->
+        <Grid.Background>
+            <ImageBrush ImageSource="../Resources/IceWABackGroundImg.jpg" Stretch="Fill" />
+        </Grid.Background>
+
         <Grid.RowDefinitions>
             <RowDefinition Height="0" />
             <RowDefinition Height="480*" />

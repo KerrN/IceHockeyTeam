@@ -7,6 +7,14 @@
 
     <!--Application Resources-->
     <Application.Resources>
+        <!-- Assighning Fonts - Sean M --> 
+        <Style TargetType="TextBlock">
+           <Setter Property="FontFamily" Value="../Resources/Sullivan-Fill.otf" />
+        </Style>
+        
+        <Style TargetType="Button">
+            <Setter Property="FontFamily" Value="../Resources/Sullivan-Fill.otf" />
+        </Style>
     </Application.Resources>
 
     <Application.ApplicationLifetimeObjects>
