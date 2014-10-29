@@ -36,10 +36,11 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <StackPanel Grid.Row="0" Margin="12,17,0,28" Name="TitlePanel">
-            <Button Content="Go Back" Height="71" Name="button1" Width="160" Click="button1_Click" />
-            <TextBlock FontFamily="Lucida Sans Unicode" FontSize="26" Name="ApplicationTitle" Style="{StaticResource PhoneTextNormalStyle}" Text="Review Game Screen" Width="282" />
-        </StackPanel>
+        <StackPanel Grid.Row="0" Margin="12,17,0,28" Name="TitlePanel"></StackPanel>
+        <!--Stack Panel Moved out of way to to formatting Issues-->
+            <Button Content="Go Back" Height="71" Name="button1" Width="160" Click="button1_Click" HorizontalAlignment="Left" />
+            <TextBlock Name="ApplicationTitle" Text="Review Game Screen" Width="282" TextAlignment="Center" />
+     
         <Rectangle Grid.Row="1" Height="396" HorizontalAlignment="Left" Margin="17,0,0,0" Name="rectangle2" Stroke="#FF9D9D8D" StrokeThickness="3" VerticalAlignment="Top" Width="181" />
         <Rectangle Grid.Row="1" Height="396" HorizontalAlignment="Left" Margin="194,1,0,0" Name="rectangle3" Stroke="#FF9D9D8D" StrokeThickness="3" VerticalAlignment="Top" Width="181" />
         <Rectangle Grid.Row="1" Height="396" HorizontalAlignment="Left" Margin="370,1,0,0" Name="rectangle4" Stroke="#FF9D9D8D" StrokeThickness="3" VerticalAlignment="Top" Width="181" />
@@ -53,25 +54,25 @@
                     </LinearGradientBrush>
                 </Rectangle.Fill>
             </Rectangle>
-            <TextBlock FlowDirection="LeftToRight" Height="26" HorizontalAlignment="Center" Margin="58,32,568,0" Name="textBlock1" Text="Games" TextTrimming="None" VerticalAlignment="Top" Width="78" />
-            <TextBlock FlowDirection="LeftToRight" Height="26" HorizontalAlignment="Center" Margin="242,32,384,0" Name="textBlock2" Text="Team 1" TextTrimming="None" VerticalAlignment="Top" Width="78" />
-            <TextBlock FlowDirection="LeftToRight" Height="26" HorizontalAlignment="Center" Margin="404,36,222,0" Name="textBlock3" Text="Team 2" TextTrimming="None" VerticalAlignment="Top" Width="78" />
-            <TextBlock FlowDirection="LeftToRight" Height="30" HorizontalAlignment="Center" Margin="601,32,25,0" Name="textBlock4" Text="Date" TextTrimming="None" VerticalAlignment="Top" Width="78" />
+            <TextBlock FlowDirection="LeftToRight" Height="26" HorizontalAlignment="Center" Margin="58,32,568,0" Name="textBlock1" Text="Games" TextTrimming="None" VerticalAlignment="Top" Width="78"  FontSize="30"/>
+            <TextBlock FlowDirection="LeftToRight" Height="26" HorizontalAlignment="Center" Margin="242,32,384,0" Name="textBlock2" Text="Team 1" TextTrimming="None" VerticalAlignment="Top" Width="78"  FontSize="30"/>
+            <TextBlock FlowDirection="LeftToRight" Height="26" HorizontalAlignment="Center" Margin="420,33,206,0" Name="textBlock3" Text="Team 2" TextTrimming="None" VerticalAlignment="Top" Width="78"  FontSize="30"/>
+            <TextBlock FlowDirection="LeftToRight" Height="30" HorizontalAlignment="Center" Margin="601,32,25,0" Name="textBlock4" Text="Date" TextTrimming="None" VerticalAlignment="Top" Width="78"  FontSize="30"/>
             <Rectangle Fill="#FF969696" Height="4" HorizontalAlignment="Left" Margin="13,170,0,0" Name="rectangle7" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="706" />
             <Rectangle Fill="#FF969696" Height="4" HorizontalAlignment="Left" Margin="10,272,0,0" Name="rectangle8" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="706" />
             <Rectangle Fill="#FF969696" Height="4" HorizontalAlignment="Left" Margin="10,362,0,0" Name="rectangle9" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="706" />
-            <TextBlock Height="30" HorizontalAlignment="Left" Margin="53,132,0,0" Name="textBlock5" Text="Game 1" VerticalAlignment="Top" />
-            <TextBlock Height="30" HorizontalAlignment="Left" Margin="218,132,0,0" Name="textBlock6" Text="Apples pies" VerticalAlignment="Top" />
-            <TextBlock Height="30" HorizontalAlignment="Left" Margin="402,132,0,0" Name="textBlock7" Text="Red Hawks" VerticalAlignment="Top" />
-            <TextBlock Height="30" HorizontalAlignment="Left" Margin="582,132,0,0" Name="textBlock8" Text="12/08/2014" VerticalAlignment="Top" />
-            <TextBlock Height="30" HorizontalAlignment="Left" Margin="52,212,0,0" Name="textBlock9" Text="Game 2" VerticalAlignment="Top" />
-            <TextBlock Height="30" HorizontalAlignment="Left" Margin="217,212,0,0" Name="textBlock10" Text="Orange Meat" VerticalAlignment="Top" />
-            <TextBlock Height="30" HorizontalAlignment="Left" Margin="401,212,0,0" Name="textBlock11" Text="Silly Tigers" VerticalAlignment="Top" />
-            <TextBlock Height="30" HorizontalAlignment="Left" Margin="581,212,0,0" Name="textBlock12" Text="16/08/2014" VerticalAlignment="Top" />
-            <TextBlock Height="30" HorizontalAlignment="Left" Margin="53,300,0,0" Name="textBlock13" Text="Game 3" VerticalAlignment="Top" />
-            <TextBlock Height="30" HorizontalAlignment="Left" Margin="218,300,0,0" Name="textBlock14" Text="Hot Dogs" VerticalAlignment="Top" />
-            <TextBlock Height="30" HorizontalAlignment="Left" Margin="402,300,0,0" Name="textBlock15" Text="Silly Tigers" VerticalAlignment="Top" />
-            <TextBlock Height="30" HorizontalAlignment="Left" Margin="582,300,0,0" Name="textBlock16" Text="16/08/2014" VerticalAlignment="Top" />
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="53,132,0,0" Name="textBlock5" Text="Game 1" VerticalAlignment="Top"  FontSize="30" Foreground="White"/>
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="218,132,0,0" Name="textBlock6" Text="Apples pies" VerticalAlignment="Top"  FontSize="30" Foreground="White"/>
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="402,132,0,0" Name="textBlock7" Text="Red Hawks" VerticalAlignment="Top"  FontSize="30" Foreground="White"/>
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="582,132,0,0" Name="textBlock8" Text="12/08/2014" VerticalAlignment="Top"  FontSize="30" Foreground="White"/>
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="52,212,0,0" Name="textBlock9" Text="Game 2" VerticalAlignment="Top"  FontSize="30" Foreground="White"/>
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="217,212,0,0" Name="textBlock10" Text="Orange Meat" VerticalAlignment="Top"  FontSize="30" Foreground="White"/>
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="401,212,0,0" Name="textBlock11" Text="Silly Tigers" VerticalAlignment="Top"  FontSize="30" Foreground="White"/>
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="581,212,0,0" Name="textBlock12" Text="16/08/2014" VerticalAlignment="Top"  FontSize="30" Foreground="White"/>
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="53,300,0,0" Name="textBlock13" Text="Game 3" VerticalAlignment="Top"  FontSize="30" Foreground="White"/>
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="218,300,0,0" Name="textBlock14" Text="Hot Dogs" VerticalAlignment="Top"  FontSize="30" Foreground="White"/>
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="402,300,0,0" Name="textBlock15" Text="Silly Tigers" VerticalAlignment="Top"  FontSize="30" Foreground="White"/>
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="582,300,0,0" Name="textBlock16" Text="16/08/2014" VerticalAlignment="Top" FontSize="30" Foreground="White" />
         </Grid>
         <Border Background="#FF656565" BorderBrush="Silver" BorderThickness="1" Grid.Row="1" Height="4" HorizontalAlignment="Left" Margin="25,80,0,0" Name="border1" VerticalAlignment="Top" Width="702" />
         <Rectangle Grid.Row="1" Height="100" HorizontalAlignment="Left" Margin="947,604,0,0" Name="rectangle6" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="200" />

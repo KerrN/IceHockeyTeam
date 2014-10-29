@@ -17,7 +17,7 @@
     <Grid x:Name="LayoutRoot">
         <!--Adding Background to View - Sean M -->
         <Grid.Background>
-            <ImageBrush ImageSource="../Resources/IceWABackGroundImg.jpg" Stretch="Fill" />
+            <ImageBrush ImageSource="../Resources/Player.jpg" Stretch="UniformToFill" />
         </Grid.Background>
 
         <Grid.RowDefinitions>
@@ -27,10 +27,10 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0">
-        	<Image Width="550" Height="125" Source="../Resources/icewa-logo.png"/>
-		</StackPanel>
-		
-		<!-- Edited by Jinho
+            <Image Width="550" Height="125" Source="../Resources/icewa-logo.png" />
+        </StackPanel>
+
+        <!-- Edited by Jinho
 			Added Exit button, Changed all buttons name, Craeted grid column definitions
 		-->
         <!--ContentPanel - place additional content here-->
@@ -39,14 +39,19 @@
 				<ColumnDefinition Width="400"/>
 				<ColumnDefinition Width="*"/>
 			</Grid.ColumnDefinitions>
-			<StackPanel x:Name="MenuPanel" Grid.Column="0">
-				<Button Width="240" Height="70" Content="Setup Game" x:Name="SetupGameBtn" FontFamily="Lucida Sans Unicode" Click="SetupGameBtn_Click" />
-	            <Button Width="240" Height="70" Content="SYNC" x:Name="SyncBtn" FontFamily="Lucida Sans Unicode" />
-	            <Button Width="240" Height="70" Content="Review Game" x:Name="ReviewGameBtn" FontFamily="Lucida Sans Unicode" Click="ReviewGameBtn_Click" />
-	            <Button Width="240" Height="70" Content="Manage Teams" x:Name="ManageTeamsBtn" FontFamily="Lucida Sans Unicode" />
-				<Button Width="240" Height="70" Content="Exit" x:Name="ExitBtn" FontFamily="Lucida Sans Unicode" />
-			</StackPanel>
-			<Image Grid.Column="1" Width="260" Height="320" Source="../Resources/icehockey.jpg"/>
+            
+            <!--Removed Hardcoded Font to use new defaut setup in the App.xmal - Sean Mitchell-->
+			<StackPanel x:Name="MenuPanel" Grid.Column="0"></StackPanel>
+            <Image Grid.Column="1" Height="150" HorizontalAlignment="Left" Margin="120,140,0,0" Name="divImg2" Stretch="Fill" VerticalAlignment="Top" Width="200" Source="/icehockeyWA;component/Resources/Divider.png" />
+            <Image Height="150" HorizontalAlignment="Left" Margin="120,210,0,0" Name="divImg3" Stretch="Fill" VerticalAlignment="Top" Width="200" Source="/icehockeyWA;component/Resources/Divider.png" Grid.Column="1" />
+            <Image Height="150" HorizontalAlignment="Left" Margin="120,280,0,0" Name="divImg5" Stretch="Fill" VerticalAlignment="Top" Width="200" Source="/icehockeyWA;component/Resources/Divider.png" Grid.Column="1" />
+            <Image Height="150" Name="divImg1" Stretch="Fill" Width="200" Source="/icehockeyWA;component/Resources/Divider.png" Grid.Column="1" Margin="120,70,80,130" />
+            <Image Height="150" Name="divImg4" Stretch="Fill" Width="200" Source="/icehockeyWA;component/Resources/Divider.png" Grid.Column="1" Margin="120,0,80,200" />
+            <Button Width="240" Height="70" Content="Setup Game" x:Name="SetupGameBtn" Click="SetupGameBtn_Click" BorderThickness="0.0" Grid.Column="1" Margin="106,0,54,280" />
+            <Button Width="240" Height="70" Content="Review Game" x:Name="ReviewGameBtn" Click="ReviewGameBtn_Click" BorderThickness="0.0" Grid.Column="1" Margin="106,70,54,210" />
+            <Button Width="240" Height="70" Content="Manage Teams" x:Name="ManageTeamsBtn" BorderThickness="0.0" Grid.Column="1" Margin="106,140,54,140" />
+            <Button Width="240" Height="70" Content="SYNC" x:Name="SyncBtn" BorderThickness="0.0" Grid.Column="1" Margin="106,210,54,70" />
+            <Button Width="240" Height="70" Content="Exit" x:Name="ExitBtn" BorderThickness="0.0" Grid.Column="1" Margin="106,280,54,0" />
         </Grid>
     </Grid>
 	

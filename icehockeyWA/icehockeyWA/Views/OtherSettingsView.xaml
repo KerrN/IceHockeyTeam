@@ -28,7 +28,7 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0">
-            <TextBlock x:Name="ApplicationTitle" TextAlignment="center" Text="OTHER / SETTINGS" Margin="10" FontFamily="Lucida Sans Unicode" Height="50" FontSize="30" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="ApplicationTitle" TextAlignment="center" Text="OTHER / SETTINGS" Margin="10"/>
         </StackPanel>
 
 		<!-- Edited By Jinho

@@ -179,4 +179,6 @@ E:\Users\Nillzie\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debu
 E:\Users\Nillzie\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\icehockeyWA.dll
 E:\Users\Nillzie\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\icehockeyWA.pdb
 E:\Users\Nillzie\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\XapCacheFile.xml
-E:\Users\Nillzie\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\Bin\Debug\Resources\Sullivan-Fill.otf
+E:\Users\Nillzie\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\Bin\Debug\Resources\Franchise-Bold.ttf
+E:\Users\Nillzie\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\Bin\Debug\Resources\Player.jpg
+E:\Users\Nillzie\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\Bin\Debug\Resources\Divyellow.gif

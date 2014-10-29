@@ -7,13 +7,18 @@
 
     <!--Application Resources-->
     <Application.Resources>
-        <!-- Assighning Fonts - Sean M --> 
+        <!-- Assighning Fonts/Universal Style - Sean M --> 
         <Style TargetType="TextBlock">
-           <Setter Property="FontFamily" Value="../Resources/Sullivan-Fill.otf" />
+            <Setter Property="FontFamily" Value="../Resources/Franchise-Bold.ttf#Franchise" />
+            <Setter Property="FontSize" Value="75.00" />
+            <Setter Property="TextAlignment" Value="Center" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="Foreground" Value="#F6C609" />
         </Style>
         
         <Style TargetType="Button">
-            <Setter Property="FontFamily" Value="../Resources/Sullivan-Fill.otf" />
+            <Setter Property="FontFamily" Value="../Resources/Franchise-Bold.ttf#Franchise" />
+            <Setter Property="FontSize" Value="35.00" />
         </Style>
     </Application.Resources>
 
