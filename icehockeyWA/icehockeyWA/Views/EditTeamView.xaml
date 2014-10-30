@@ -31,13 +31,13 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Margin="-19,3,0,-3" Grid.RowSpan="2">
-            <ListBox Height="204" HorizontalAlignment="Left" Margin="20,119,0,0" Name="listBox1" VerticalAlignment="Top" Width="325" BorderBrush="White" BorderThickness="1">
+            <ListBox Height="204" HorizontalAlignment="Left" Margin="47,119,0,0" Name="listBox1" VerticalAlignment="Top" Width="325" BorderBrush="White" BorderThickness="1">
                 <ListBoxItem Content="A display name" />
                 <ListBoxItem Content="another name" />
             </ListBox>
-            <TextBlock Height="49" HorizontalAlignment="Left" Margin="21,58,0,0" Name="textBlock1" Text="Selected Player" VerticalAlignment="Top" Width="182" FontSize="26" />
-            <ListBox Height="61" HorizontalAlignment="Left" Margin="276,46,0,0" Name="listBox2" VerticalAlignment="Top" Width="70" BorderThickness="1" BorderBrush="White" FontSize="36" Padding="20,0,0,0">
-                <ListBoxItem Content="1" />
+            <TextBlock Height="49" HorizontalAlignment="Left" Margin="47,57,0,0" Name="textBlock1" Text="Selected Player" VerticalAlignment="Top" Width="182" FontSize="35" />
+            <ListBox Height="61" HorizontalAlignment="Left" Margin="302,46,0,0" Name="listBox2" VerticalAlignment="Top" Width="70" BorderThickness="1" BorderBrush="White" FontSize="36" Padding="20,0,0,0">
+                <ListBoxItem Content="1" VerticalAlignment="Center" VerticalContentAlignment="Center" />
                 <ListBoxItem Content="2" />
                 <ListBoxItem Content="3" />
                 <ListBoxItem Content="4" />

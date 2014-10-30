@@ -31,7 +31,7 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <Grid x:Name="TopPanel" Grid.Row="0" Margin="10">
-            <TextBlock x:Name="ApplicationTitle" Text="Penalty" Style="{StaticResource PhoneTextNormalStyle}" HorizontalAlignment="Center" FontSize="26" FontWeight="Bold"/>            
+            <TextBlock x:Name="ApplicationTitle" Text="Penalty"  HorizontalAlignment="Center" FontSize="35"/>            
         </Grid>
 
         <!--ContentPanel - place additional content here-->

@@ -30,9 +30,9 @@
 			Added back and next buttons
 		-->
         <!--TitlePanel contains the name of the application and page title-->
-        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28" Orientation="Horizontal">
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" >
         	<Button x:Name="BackBtn" Content="Back" Click="BackBtn_Click" />
-            <TextBlock x:Name="PageTitle" Text="Player Number" Style="{StaticResource PhoneTextTitle1Style}" TextAlignment="Center"/>
+            <TextBlock x:Name="PageTitle" Text="Player Number" TextAlignment="Center" />
 			<Button x:Name="NextBtn" Content="Next" Click="NextBtn_Click" />
         </StackPanel>
 		
