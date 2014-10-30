@@ -43,7 +43,7 @@
                 <RowDefinition Height="227*" />
             </Grid.RowDefinitions>
             <Button Content="3" FontSize="40" Foreground="White" Grid.RowSpan="2" Height="107" Margin="243,0,260,217" Name="textBox4" Width="225" />
-            <Button Content="No Assist" FontSize="40" Foreground="White" Grid.RowSpan="2" Height="107" Margin="12,0,491,217" Name="button1" Width="225" />
+            <Button Content="No Assist" FontSize="40" Foreground="White" Grid.RowSpan="2" Height="107" Margin="12,0,491,217" Name="btnNoAss" Width="225" />
             <Button Content="3" FontSize="40" Foreground="White" Grid.RowSpan="2" Height="107" Margin="477,0,26,217" Name="button2" Width="225" />
             <Button Content="3" FontSize="40" Foreground="White" Height="107" Margin="6,0,497,120" Name="button3" Width="225" Grid.Row="1" />
             <Button Content="3" FontSize="40" Foreground="White" Height="107" Margin="243,0,260,120" Name="button4" Width="225" Grid.Row="1" />

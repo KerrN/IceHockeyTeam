@@ -38,9 +38,9 @@
         </Grid.RowDefinitions>
 
         <Grid Grid.Row="1" Margin="12,0,12,0" Name="ContentPanel">
-            <ListBox Background="#FF222222" BorderBrush="#FFA0A0A0" BorderThickness="3" FontSize="100" Height="337" HorizontalAlignment="Center" ItemsSource="{Binding RelativeSource={RelativeSource Self}}" Margin="365,0,0,0" Name="listBox1" VerticalAlignment="Top" Width="339" />
-            <Button Background="#FF222222" Click="button1_Click" Content="Home" Height="96" HorizontalAlignment="Left" Margin="32,30,0,0" Name="button1" VerticalAlignment="Top" Width="289" />
-            <Button Background="#FF222222" Click="button2_Click" Content="Away" Height="98" HorizontalAlignment="Left" Margin="32,159,0,0" Name="button2" VerticalAlignment="Top" Width="289" />
+            <ListBox Background="#FF222222" BorderBrush="#FFA0A0A0" BorderThickness="3" FontSize="100" Height="337" HorizontalAlignment="Center" ItemsSource="{Binding RelativeSource={RelativeSource Self}}" Margin="365,0,0,0" Name="lstBoxGoalies" VerticalAlignment="Top" Width="339" />
+            <Button Background="#FF222222" Click="button1_Click" Content="Home" Height="96" HorizontalAlignment="Left" Margin="32,30,0,0" Name="btnHome" VerticalAlignment="Top" Width="289" />
+            <Button Background="#FF222222" Click="button2_Click" Content="Away" Height="98" HorizontalAlignment="Left" Margin="32,159,0,0" Name="btnAway" VerticalAlignment="Top" Width="289" />
         </Grid>
         <Grid Height="125" Margin="12,12,0,6" Name="grid1">
             <Grid.ColumnDefinitions>
@@ -48,7 +48,7 @@
                 <ColumnDefinition Width="32*" />
             </Grid.ColumnDefinitions>
             <TextBlock Height="103" Margin="32,16,0,6" Name="PageTitle" Text="Change goalie" TextWrapping="NoWrap" VerticalAlignment="Center" Width="532" />
-            <Button Click="button3_Click" Content="GO" Margin="465,16,131,28" Name="button3" VerticalContentAlignment="Center" Width="120
+            <Button Click="button3_Click" Content="GO" Margin="465,16,131,28" Name="btnGo" VerticalContentAlignment="Center" Width="120
                     " Grid.ColumnSpan="2" />
             <StackPanel Height="337" HorizontalAlignment="Left" Margin="207,131,0,0" Name="stackPanel1" VerticalAlignment="Top" Width="260" />
         </Grid>
