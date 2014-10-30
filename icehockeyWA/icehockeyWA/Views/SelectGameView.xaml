@@ -28,11 +28,11 @@
             <ListBox Height="39" HorizontalAlignment="Left" Margin="436,139,0,0" Name="listBoxdd" VerticalAlignment="Top" Width="59" />
             <ListBox Height="39" HorizontalAlignment="Left" Margin="519,139,0,0" Name="listBoxmm" VerticalAlignment="Top" Width="59" />
             <ListBox Height="39" HorizontalAlignment="Left" Margin="598,139,0,0" Name="listBoxyy" VerticalAlignment="Top" Width="92" />
-            <TextBlock Height="47" HorizontalAlignment="Left" Margin="50,216,0,0" Name="textBlock1" Text="ID" VerticalAlignment="Top" Width="97" FontSize="30" />
-            <TextBlock FontSize="30" Height="47" HorizontalAlignment="Left" Margin="153,216,0,0" Name="textBlock2" Text="Home" VerticalAlignment="Top" Width="97" />
-            <TextBlock FontSize="30" Height="47" HorizontalAlignment="Left" Margin="306,216,0,0" Name="textBlock3" Text="Away" VerticalAlignment="Top" Width="97" />
-            <TextBlock FontSize="30" Height="47" HorizontalAlignment="Left" Margin="436,216,0,0" Name="textBlock4" Text="Time" VerticalAlignment="Top" Width="97" />
-            <TextBlock FontSize="30" Height="47" HorizontalAlignment="Left" Margin="540,216,0,0" Name="textBlock5" Text="Venue" VerticalAlignment="Top" Width="97" />
+            <TextBlock Height="47" HorizontalAlignment="Left" Margin="50,216,0,0" Name="textBlock1" Text="ID" VerticalAlignment="Top" Width="97" FontSize="30" Foreground="White" />
+            <TextBlock FontSize="30" Height="47" HorizontalAlignment="Left" Margin="153,216,0,0" Name="textBlock2" Text="Home" VerticalAlignment="Top" Width="97" Foreground="White" />
+            <TextBlock FontSize="30" Height="47" HorizontalAlignment="Left" Margin="306,216,0,0" Name="textBlock3" Text="Away" VerticalAlignment="Top" Width="97" Foreground="White" />
+            <TextBlock FontSize="30" Height="47" HorizontalAlignment="Left" Margin="436,216,0,0" Name="textBlock4" Text="Time" VerticalAlignment="Top" Width="97" Foreground="White" />
+            <TextBlock FontSize="30" Height="47" HorizontalAlignment="Left" Margin="540,216,0,0" Name="textBlock5" Text="Venue" VerticalAlignment="Top" Width="97" Foreground="White" />
             <ListBox Height="190" Margin="20,284,0,0" Name="listBox2" VerticalAlignment="Top" HorizontalAlignment="Left" Width="702" BorderThickness="2" BorderBrush="White"></ListBox>
         </Grid>
     </Grid>
