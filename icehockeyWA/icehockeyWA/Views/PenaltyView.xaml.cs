@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
+using icehockeyWA.ViewModels;
 
 namespace icehockeyWA.Views
 {
@@ -18,44 +19,12 @@ namespace icehockeyWA.Views
         public PenaltyView()
         {
             InitializeComponent();
+            DataContext = new PenaltyViewModel();
         }
 
         private void ConfirmBtn_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new Uri("/Views/GameView.xaml", UriKind.Relative));
         }
-
-        private void AddHomePenaltyBtn_Click(object sender, System.Windows.RoutedEventArgs e)
-        {
-			// TODO: Add event handler implementation here.
-			// Jinho
-			// call method
-			AddPanalty("Home");
-        }
-
-        private void AddAwayPenaltyBtn_Click(object sender, System.Windows.RoutedEventArgs e)
-        {
-        	// TODO: Add event handler implementation here.
-			// Jinho
-			// call method
-			AddPanalty("Away");
-        }
-		
-		/** Created by Jinho **/        	
-		private void AddPanalty(string arg){
-			var lbi = new ListBoxItem();
-			string contentStr = arg + " ";
-			
-			contentStr += PlayerLoopingSelector.DataSource.SelectedItem.ToString() + " ";
-			contentStr += PenaltyLoopingSelector.DataSource.SelectedItem.ToString() + " ";
-			contentStr += TimeLoopingSelector.DataSource.SelectedItem.ToString();
-			
-			lbi.Content = contentStr;
-			lbi.FontSize = 30;
-			lbi.IsEnabled = false;
-			
-			PenaltiesListBox.Items.Add(lbi);
-		}
-       	/***********************/
     }
 }
