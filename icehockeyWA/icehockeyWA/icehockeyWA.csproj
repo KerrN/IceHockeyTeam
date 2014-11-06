@@ -64,9 +64,6 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Models\EventModel.cs" />
-    <Compile Include="Models\PenaltyModel.cs" />
-    <Compile Include="RelayCommand.cs" />
     <Compile Include="ViewModels\AssistViewModel.cs" />
     <Compile Include="ViewModels\ChangeGoalieViewModel.cs" />
     <Compile Include="ViewModels\EditTeamViewModel.cs" />
@@ -83,7 +80,6 @@
     <Compile Include="ViewModels\PostGameViewModel.cs" />
     <Compile Include="ViewModels\ReviewGameViewModel.cs" />
     <Compile Include="ViewModels\SelectGameViewModel.cs" />
-    <Compile Include="ViewModels\ViewModelBase.cs" />
     <Compile Include="Views\AssistView.xaml.cs">
       <DependentUpon>AssistView.xaml</DependentUpon>
     </Compile>
@@ -122,13 +118,14 @@
     <Compile Include="Views\OtherSettingsView.xaml.cs">
       <DependentUpon>OtherSettingsView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PenaltyDataSource.cs" />
     <Compile Include="Views\PenaltyView.xaml.cs">
       <DependentUpon>PenaltyView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\PenaltyOtherView.xaml.cs">
       <DependentUpon>PenaltyOtherView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="LoopingDataSource.cs" />
+    <Compile Include="PlayerDataSource.cs" />
     <Compile Include="Views\PlayerNumberView.xaml.cs">
       <DependentUpon>PlayerNumberView.xaml</DependentUpon>
     </Compile>
@@ -143,9 +140,13 @@
       <DependentUpon>SelectGameView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\Team.cs" />
+<<<<<<< HEAD
     <Compile Include="Views\Signature.xaml.cs">
       <DependentUpon>Signature.xaml</DependentUpon>
     </Compile>
+=======
+    <Compile Include="TimeDataSource.cs" />
+>>>>>>> origin/master
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
