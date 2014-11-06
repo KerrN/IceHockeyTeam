@@ -140,13 +140,13 @@
       <DependentUpon>SelectGameView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\Team.cs" />
-<<<<<<< HEAD
+
     <Compile Include="Views\Signature.xaml.cs">
       <DependentUpon>Signature.xaml</DependentUpon>
     </Compile>
-=======
+
     <Compile Include="TimeDataSource.cs" />
->>>>>>> origin/master
+
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
