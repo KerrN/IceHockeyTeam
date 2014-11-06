@@ -143,6 +143,9 @@
       <DependentUpon>SelectGameView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\Team.cs" />
+    <Compile Include="Views\Signature.xaml.cs">
+      <DependentUpon>Signature.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -218,6 +221,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\SelectGameView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Signature.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

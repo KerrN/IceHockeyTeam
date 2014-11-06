@@ -19,5 +19,25 @@ namespace icehockeyWA.Views
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn_sig1_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Views/Signature.xaml", UriKind.Relative));
+        }
+
+        private void btn_sig2_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Views/Signature.xaml", UriKind.Relative));
+        }
     }
 }

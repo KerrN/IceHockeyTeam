@@ -37,10 +37,12 @@
             <TextBox Height="72" HorizontalAlignment="Left" Margin="380,107,0,0" Name="textBox4" Text="Linesman 1" VerticalAlignment="Top" Width="336" />
             <TextBox Height="72" HorizontalAlignment="Left" Margin="380,185,0,0" Name="textBox5" Text="Linesman 2" VerticalAlignment="Top" Width="336" />
             <TextBox Height="72" HorizontalAlignment="Left" Margin="380,263,0,0" Name="textBox6" Text="Location" VerticalAlignment="Top" Width="336" />
-            <TextBox Height="72" HorizontalAlignment="Left" Margin="6,79,0,0" Name="textBox7" Text="Team Manager Sign here" VerticalAlignment="Top" Width="313" />
-            <TextBox Height="72" HorizontalAlignment="Left" Margin="6,402,0,0" Name="textBox8" Text="Team Manager Sign here" VerticalAlignment="Top" Width="313" />
-            <Button Content="Back" Height="91" HorizontalAlignment="Left" Margin="338,383,0,0" Name="button1" VerticalAlignment="Top" Width="194" />
-            <Button Content="Start" Height="91" HorizontalAlignment="Right" Margin="0,383,-12,0" Name="button2" VerticalAlignment="Top" Width="194" />
+            <TextBox Height="72" HorizontalAlignment="Left" Margin="6,79,0,0" Name="textBox7" Text="Sign here" VerticalAlignment="Top" Width="184" />
+            <TextBox Height="72" HorizontalAlignment="Left" Margin="6,402,0,0" Name="textBox8" Text="Sign here" VerticalAlignment="Top" Width="184" />
+            <Button Content="Back" Height="91" HorizontalAlignment="Left" Margin="338,383,0,0" Name="button1" VerticalAlignment="Top" Width="194" Click="button1_Click" />
+            <Button Content="Start" Height="91" HorizontalAlignment="Right" Margin="0,383,-12,0" Name="button2" VerticalAlignment="Top" Width="194" Click="button2_Click" />
+            <Button Content="Sign" Height="72" HorizontalAlignment="Left" Margin="172,79,0,0" Name="btn_sig1" VerticalAlignment="Top" Width="160" Click="btn_sig1_Click" />
+            <Button Content="Sign" Height="72" HorizontalAlignment="Left" Margin="172,402,0,0" Name="btn_sig2" VerticalAlignment="Top" Width="160" Click="btn_sig2_Click" />
         </Grid>
     </Grid>
  
