@@ -31,16 +31,18 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <Grid x:Name="TopPanel" Grid.Row="0" Margin="10">
-            <TextBlock x:Name="ApplicationTitle" Text="Penalty"  HorizontalAlignment="Center" FontSize="35"/>            
+            <TextBlock x:Name="ApplicationTitle" Text="Penalty"  HorizontalAlignment="Center"/>
+            <CheckBox x:Name="PenaltyShotChk" Content="Penalty Shot" HorizontalAlignment="Left" Margin="2,-4,0,6" />
+            <Button x:Name="OtherPenaltyBtn" Content="Other Penalty" HorizontalAlignment="Right" Margin="0,6,12,-1" />
         </Grid>
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="100"/>
-                <RowDefinition Height="70"/>
-                <RowDefinition Height="160"/>
-                <RowDefinition Height="*"/>
+                <RowDefinition Height="0"/>
+                <RowDefinition Height="190"/>
+                <RowDefinition Height="92*"/>
             </Grid.RowDefinitions>
 
 			<!-- Edited by Jinho
@@ -87,12 +89,9 @@
                 </controls:LoopingSelector>
             </Grid>
 
-            <Grid x:Name="OptionPanel" Grid.Row="1">
-                <CheckBox x:Name="PenaltyShotChk" Content="Penalty Shot" HorizontalAlignment="Left"/>
-                <Button x:Name="OtherPenaltyBtn" Content="Other Penalty" HorizontalAlignment="Right"/>
-            </Grid>
+            <Grid x:Name="OptionPanel" Grid.Row="1"></Grid>
 			
-            <ListBox Margin="10,0" Grid.Row="2" Name="PenaltiesListBox" BorderThickness="1" BorderBrush="White" Padding="10"/>
+            <ListBox Margin="10,0" Grid.Row="2" Name="PenaltiesListBox" BorderThickness="1" BorderBrush="White" Padding="10" />
 			
             <Grid x:Name="ButtonPanel" Margin="0, 8, 0, 0" Grid.Row="3">
                 <Grid.ColumnDefinitions>
