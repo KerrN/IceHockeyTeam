@@ -14,7 +14,13 @@
     shell:SystemTray.IsVisible="True">
 
     <!--LayoutRoot is the root grid where all page content is placed-->
-    <Grid x:Name="LayoutRoot" Background="Transparent">
+    <Grid x:Name="LayoutRoot">
+
+        <!--Adding Background to View - Sean M -->
+        <Grid.Background>
+            <ImageBrush ImageSource="../Resources/IceWABackGroundImg.jpg" Stretch="Fill" />
+        </Grid.Background>
+
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -24,9 +30,9 @@
 			Added back and next buttons
 		-->
         <!--TitlePanel contains the name of the application and page title-->
-        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28" Orientation="Horizontal">
-        	<Button x:Name="BackBtn" Content="Back" Click="BackBtn_Click" />
-            <TextBlock x:Name="PageTitle" Text="Assist players" Style="{StaticResource PhoneTextTitle1Style}" FontFamily="Lucida Sans Unicode" TextAlignment="Center" Margin="0" />
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+        	<Button x:Name="BackBtn" Content="Back" Click="BackBtn_Click" HorizontalAlignment="Center" />
+            <TextBlock x:Name="PageTitle" Text="Assist players"  TextAlignment="Center" Margin="0" />
 			<Button x:Name="NextBtn" Content="Next" Click="NextBtn_Click" />
         </StackPanel>
 

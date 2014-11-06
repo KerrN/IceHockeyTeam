@@ -14,23 +14,29 @@
     shell:SystemTray.IsVisible="True">
 
     <!--LayoutRoot is the root grid where all page content is placed-->    
-    <Grid Background="Transparent" Name="LayoutRoot">
+    <Grid Name="LayoutRoot">
+
+        <!--Adding Background to View - Sean M -->
+        <Grid.Background>
+            <ImageBrush ImageSource="../Resources/IceWABackGroundImg.jpg" Stretch="Fill" />
+        </Grid.Background>
+
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0" Margin="12,17,0,28" Name="TitlePanel"></StackPanel>
         <Grid Grid.Row="1" Margin="12,0,12,0" Name="ContentPanel">
-            <TextBox Height="185" HorizontalAlignment="Left" Margin="61,0,0,0" Name="textBox1" Text="" VerticalAlignment="Top" Width="601" />
-            <Button Content="Add" Height="95" HorizontalAlignment="Left" Margin="492,218,0,0" Name="Add_but" VerticalAlignment="Top" Width="206" />
-            <Button Content="Cancel" Height="95" HorizontalAlignment="Left" Margin="0,224,0,0" Name="button1" VerticalAlignment="Top" Width="206" />
+            <TextBox Height="237" HorizontalAlignment="Left" Margin="61,0,0,0" Name="textBox1" Text="" VerticalAlignment="Top" Width="601" />
+            <Button Content="Add" Height="95" HorizontalAlignment="Right" Margin="0,218,42,0" Name="Add_but" VerticalAlignment="Top" Width="206" />
+            <Button Content="Cancel" Height="95" HorizontalAlignment="Left" Margin="61,224,0,0" Name="button1" VerticalAlignment="Top" Width="206" />
         </Grid>
         <Grid Height="100" Margin="24,50,0,11" Name="grid1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="446*" />
                 <ColumnDefinition Width="258*" />
             </Grid.ColumnDefinitions>
-            <TextBlock Margin="0,-13,42,17" Name="PageTitle" Style="{StaticResource PhoneTextTitle1Style}" Text="NOTES" Width="442" />
+            <TextBlock Margin="119,-2,143,6" Name="PageTitle" Text="NOTES" Width="442" Grid.ColumnSpan="2" HorizontalAlignment="Center" />
         </Grid>
     </Grid>
 </phone:PhoneApplicationPage>

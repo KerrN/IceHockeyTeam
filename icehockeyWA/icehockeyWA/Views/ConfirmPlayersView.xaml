@@ -14,7 +14,13 @@
     shell:SystemTray.IsVisible="True">
 
     <!--LayoutRoot is the root grid where all page content is placed-->
-    <Grid x:Name="LayoutRoot" Background="Transparent">
+    <Grid x:Name="LayoutRoot">
+
+        <!--Adding Background to View - Sean M -->
+        <Grid.Background>
+            <ImageBrush ImageSource="../Resources/IceWABackGroundImg.jpg" Stretch="Fill" />
+        </Grid.Background>
+
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -33,7 +39,7 @@
             <ListBox Height="52" HorizontalAlignment="Left" Margin="6,131,0,0" Name="listBox5" VerticalAlignment="Top" Width="273" />
             <Button Content="Next" Height="72" HorizontalAlignment="Left" Margin="538,374,0,0" Name="button1" VerticalAlignment="Top" Width="160" />
             <Button Content="Edit" Height="72" HorizontalAlignment="Left" Margin="372,374,0,0" Name="button2" VerticalAlignment="Top" Width="160" />
-            <Button Content="Cancel" Height="72" HorizontalAlignment="Left" Margin="206,374,0,0" Name="button3" VerticalAlignment="Top" Width="160" />
+            <Button Content="Cancel" Height="72" HorizontalAlignment="Left" Margin="6,374,0,0" Name="button3" VerticalAlignment="Top" Width="160" />
         </Grid>
     </Grid>
  
