@@ -182,3 +182,8 @@ E:\Users\Nillzie\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debu
 E:\Users\Nillzie\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\Bin\Debug\Resources\Franchise-Bold.ttf
 E:\Users\Nillzie\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\Bin\Debug\Resources\Player.jpg
 E:\Users\Nillzie\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\Bin\Debug\Resources\Divyellow.gif
+C:\Users\041402463\Documents\github\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\Views\Signature.g.i.cs
+C:\Users\041402463\Documents\github\IceHockeyTeam\icehockeyWA\icehockeyWA\Bin\Debug\Resources\Divyellow.gif
+C:\Users\041402463\Documents\github\IceHockeyTeam\icehockeyWA\icehockeyWA\Bin\Debug\Resources\IceWABackGroundImg.jpg
+C:\Users\041402463\Documents\github\IceHockeyTeam\icehockeyWA\icehockeyWA\Bin\Debug\Resources\Player.jpg
+C:\Users\041402463\Documents\github\IceHockeyTeam\icehockeyWA\icehockeyWA\Bin\Debug\Resources\Franchise-Bold.ttf

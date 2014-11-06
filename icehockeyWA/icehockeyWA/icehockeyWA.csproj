@@ -64,6 +64,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\EventModel.cs" />
+    <Compile Include="Models\PenaltyModel.cs" />
+    <Compile Include="Models\RelayCommand.cs" />
     <Compile Include="ViewModels\AssistViewModel.cs" />
     <Compile Include="ViewModels\ChangeGoalieViewModel.cs" />
     <Compile Include="ViewModels\EditTeamViewModel.cs" />
@@ -80,6 +83,7 @@
     <Compile Include="ViewModels\PostGameViewModel.cs" />
     <Compile Include="ViewModels\ReviewGameViewModel.cs" />
     <Compile Include="ViewModels\SelectGameViewModel.cs" />
+    <Compile Include="ViewModels\ViewModelBase.cs" />
     <Compile Include="Views\AssistView.xaml.cs">
       <DependentUpon>AssistView.xaml</DependentUpon>
     </Compile>
@@ -140,13 +144,10 @@
       <DependentUpon>SelectGameView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\Team.cs" />
-
     <Compile Include="Views\Signature.xaml.cs">
       <DependentUpon>Signature.xaml</DependentUpon>
     </Compile>
-
     <Compile Include="TimeDataSource.cs" />
-
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">

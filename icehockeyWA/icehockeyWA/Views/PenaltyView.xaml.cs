@@ -28,9 +28,9 @@ namespace icehockeyWA.Views
         private void AddHomePenaltyBtn_Click(object sender, System.Windows.RoutedEventArgs e)
         {
 			// TODO: Add event handler implementation here.
-			// Jinho
+			// Jinho... fixed by Josh
 			// call method
-			AddPanalty("Home");
+			AddPenalty("Home");
         }
 
         private void AddAwayPenaltyBtn_Click(object sender, System.Windows.RoutedEventArgs e)
@@ -38,11 +38,11 @@ namespace icehockeyWA.Views
         	// TODO: Add event handler implementation here.
 			// Jinho
 			// call method
-			AddPanalty("Away");
+			AddPenalty("Away");
         }
 		
 		/** Created by Jinho **/        	
-		private void AddPanalty(string arg){
+		private void AddPenalty(string arg){
 			var lbi = new ListBoxItem();
 			string contentStr = arg + " ";
 			
