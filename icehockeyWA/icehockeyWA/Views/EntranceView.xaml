@@ -43,7 +43,10 @@
             <!--Removed Hardcoded Font to use new defaut setup in the App.xmal - Sean Mitchell-->
 			<StackPanel x:Name="MenuPanel" Grid.Column="0">
                 <!-- TEMP BUTTON FOR NAVIGATING TO END PAGES -->
+<<<<<<< HEAD
                 <Button Content="DELETE ME" Height="71" Name="button1" Width="160" Background="Red" Click="SkipToButton_Click" />
+=======
+>>>>>>> origin/UI
                 <!-- DELETE WHEN NO LONGER NEEDED -->
             </StackPanel>
             <Image Grid.Column="1" Height="150" HorizontalAlignment="Left" Margin="120,140,0,0" Name="divImg2" Stretch="Fill" VerticalAlignment="Top" Width="200" Source="/icehockeyWA;component/Resources/Divider.png" />
