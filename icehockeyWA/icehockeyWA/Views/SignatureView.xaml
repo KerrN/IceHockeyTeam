@@ -34,11 +34,17 @@
         <!--Main ContentPanel-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
             <InkPresenter  Name="signaturePad" Background="White" Margin="5,5,5,84">
-                <Button Content="Redo" Height="72" Name="btnRedo" Width="160" Foreground="Black" BorderBrush="Black" Click="btnRedo_Click" Canvas.Left="539" Canvas.Top="206" />
-                <Button Content="Undo" Height="72" Name="btnUndo" Width="160" Foreground="Black" BorderBrush="Black" Click="btnUndo_Click" Canvas.Left="0" Canvas.Top="206" />
+                <Button Height="70" Width="100"  Name="btnRedo" Foreground="Black" Click="btnRedo_Click" Canvas.Left="606" Canvas.Top="217">
+                    <Image Stretch="Fill" Source="../Resources/mono_redo.png"
+                           HorizontalAlignment="Center" VerticalAlignment="Bottom" />
+                 </Button>
+                <Button Height="70" Name="btnUndo" Width="100" Foreground="Black" Click="btnUndo_Click" Canvas.Left="-10" Canvas.Top="216" >
+                    <Image Stretch="Fill" Source="../Resources/mono_undo.png"
+                           HorizontalAlignment="Center" VerticalAlignment="Bottom" />
+                </Button>
             </InkPresenter>
             
-            <Button Content="Commit" Height="72" HorizontalAlignment="Left" Margin="544,295,0,0" Name="btnCommit" VerticalAlignment="Top" Width="160" />
+            <Button Content="Commit" Height="72" HorizontalAlignment="Left" Margin="544,295,0,0" Name="btnCommit" VerticalAlignment="Top" Width="160" Click="btnCommit_Click" />
             <Button Content="Cancel" Height="72" HorizontalAlignment="Left" Margin="6,289,0,0" Name="btnCancel" VerticalAlignment="Top" Width="160" />
             
         </Grid>
