@@ -130,17 +130,22 @@ namespace icehockeyWA.Views
         /* By Jinho
          * Timer button event
          * */
+        string temp = "20:00";
         private void TimerBtn_Click(object sender, RoutedEventArgs e)
         {
+            
             if (timer.IsEnabled == true)
             {
                 timer.Stop();
-                TimerBtn.Foreground = new SolidColorBrush(Colors.Green);
+                temp = TimerBtn.Content.ToString();
+                TimerBtn.Content = "Paused";
+                TimerBtn.Foreground = new SolidColorBrush(Colors.Red);
             }
             else
             {
                 timer.Start();
-                TimerBtn.Foreground = new SolidColorBrush(Colors.Red);
+                TimerBtn.Content = temp;
+                TimerBtn.Foreground = new SolidColorBrush(Colors.Green);
             }
         }
 
