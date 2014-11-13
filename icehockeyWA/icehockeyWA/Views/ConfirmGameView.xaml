@@ -41,7 +41,6 @@
             <TextBox Height="72" HorizontalAlignment="Left" Margin="6,402,0,0" Name="textBox8" Text="Team Manager Sign here" VerticalAlignment="Top" Width="313" />
             <Button Content="Back" Height="91" HorizontalAlignment="Left" Margin="338,383,0,0" Name="btnBack" VerticalAlignment="Top" Width="194" />
             <Button Content="Start" Height="91" HorizontalAlignment="Right" Margin="0,383,-12,0" Name="btnStart" VerticalAlignment="Top" Width="194" Click="btnStart_Click" />
-            <Button Content="Start" Height="91" HorizontalAlignment="Right" Margin="0,383,-12,0" Name="btnStart" VerticalAlignment="Top" Width="194" />
         </Grid>
     </Grid>
  

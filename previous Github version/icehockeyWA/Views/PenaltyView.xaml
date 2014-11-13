@@ -1,0 +1,109 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="icehockeyWA.Views.PenaltyView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls.Primitives;assembly=Microsoft.Phone.Controls.Toolkit" 
+    xmlns:local="clr-namespace:Penalty"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Landscape" Orientation="Landscape"
+    mc:Ignorable="d" d:DesignHeight="480" d:DesignWidth="728"
+    shell:SystemTray.IsVisible="True">
+
+	<!-- Created UI by Jinho -->
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot">
+
+        <!--Adding Background to View - Sean M -->
+        <Grid.Background>
+            <ImageBrush ImageSource="../Resources/IceWABackGroundImg.jpg" Stretch="Fill" />
+        </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <Grid x:Name="TopPanel" Grid.Row="0" Margin="10">
+            <TextBlock x:Name="ApplicationTitle" Text="Penalty" HorizontalAlignment="Center"  />
+            <Button x:Name="OtherPenaltyBtn" Content="Other Penalty" HorizontalAlignment="Right" Margin="0,6,4,-1" />
+            <CheckBox x:Name="PenaltyShotChk" Content="Penalty Shot" HorizontalAlignment="Left" Margin="0,0,0,8" />
+        </Grid>
+            <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="110"/>
+                <RowDefinition Height="100*"/>
+            </Grid.RowDefinitions>
+
+			<!-- Edited by Jinho
+				Edited looping selectors and buttons size
+			-->
+            <Grid x:Name="LoopingSelectorPanel" Height="100" Grid.ColumnSpan="3" Width="700">
+                <Grid.Resources>
+                    <DataTemplate x:Key="PlayerTemplate">
+                        <Grid>
+                            <TextBox IsReadOnly="True" Text="{Binding}" Width="170" Height="100" TextAlignment="Center"/>
+                        </Grid>
+                    </DataTemplate>
+                    <DataTemplate x:Key="PenaltyTemplate">
+                        <Grid>
+                            <TextBox IsReadOnly="True" Text="{Binding}" Width="420" Height="100" TextAlignment="Center"/>
+                        </Grid>
+                    </DataTemplate>
+                    <DataTemplate x:Key="TimeTemplate">
+                        <Grid>
+                            <TextBox IsReadOnly="True" Text="{Binding}" Width="120" Height="100" TextAlignment="Center"/>
+                        </Grid>
+                    </DataTemplate>
+                </Grid.Resources>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <controls:LoopingSelector x:Name="PlayerLoopingSelector" Margin="0,-50,0,0" Grid.Column="0" Width="150" Height="200" ItemTemplate="{StaticResource PlayerTemplate}" ItemSize="170,110">
+                    <controls:LoopingSelector.DataSource>
+                        <local:PlayerDataSource/>
+                    </controls:LoopingSelector.DataSource>
+                </controls:LoopingSelector>
+                <controls:LoopingSelector x:Name="PenaltyLoopingSelector" Margin="0,-50,0,0" Grid.Column="1" Width="400" Height="200" ItemTemplate="{StaticResource PenaltyTemplate}" ItemSize="420,110">
+                    <controls:LoopingSelector.DataSource>
+                        <local:PenaltyDataSource/>
+                    </controls:LoopingSelector.DataSource>
+                </controls:LoopingSelector>
+                <controls:LoopingSelector x:Name="TimeLoopingSelector" Margin="0,-50,0,0" Grid.Column="2" Width="100" Height="200" ItemTemplate="{StaticResource TimeTemplate}" ItemSize="120,110">
+                    <controls:LoopingSelector.DataSource>
+                        <local:TimeDataSource/>
+                    </controls:LoopingSelector.DataSource>
+                </controls:LoopingSelector>
+            </Grid>
+
+            <Grid x:Name="OptionPanel" Grid.Row="1"></Grid>
+			
+            <ListBox Margin="6,0,14,0" Grid.Row="1" Name="PenaltiesListBox" BorderThickness="1" BorderBrush="White" Padding="10" Grid.RowSpan="2" />
+			
+            <Grid x:Name="ButtonPanel" Margin="0, 8, 0, 0" Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.5*" />
+                    <ColumnDefinition Width="1.5*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="AddHomePenaltyBtn" Content="Add Home Penalty" Width="270" Click="AddHomePenaltyBtn_Click"/>
+                <Button x:Name="AddAwayPenaltyBtn" Grid.Column="1" Content="Add Away Penalty" Width="270" Click="AddAwayPenaltyBtn_Click"/>
+                <Button x:Name="ConfirmBtn" Grid.Column="2" Content="Confirm" Width="160" Click="ConfirmBtn_Click"/>
+            </Grid>
+          
+        </Grid>
+    </Grid>
+</phone:PhoneApplicationPage>
