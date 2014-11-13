@@ -155,6 +155,9 @@
     </Compile>
     <Compile Include="Models\Team.cs" />
     <Compile Include="TimeDataSource.cs" />
+    <Compile Include="Views\SignatureView.xaml.cs">
+      <DependentUpon>SignatureView.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -230,6 +233,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\SelectGameView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\SignatureView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

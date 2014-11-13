@@ -68,6 +68,11 @@ namespace icehockeyWA.Views
             {
                 signaturePad.Strokes.Add(_removedStrokes.Pop());
             }
+        }
+
+        private void btnCommit_Click(object sender, RoutedEventArgs e)
+        {
+
         }  
         
     }
