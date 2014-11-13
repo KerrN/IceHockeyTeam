@@ -1,0 +1,17 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="BasicHttpBinding_IIceWAService" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://student.mydesign.central.wa.edu.au/IceWA_Virtual/IceWAService.svc"
+                binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IIceWAService"
+                contract="IceIceBaby.IIceWAService" name="BasicHttpBinding_IIceWAService" />
+        </client>
+    </system.serviceModel>
+</configuration>

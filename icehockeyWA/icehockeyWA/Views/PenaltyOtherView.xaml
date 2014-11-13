@@ -30,9 +30,9 @@
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28"></StackPanel>
 
         <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Margin="12,0" Grid.RowSpan="2">
-            <TextBox Height="84" HorizontalAlignment="Left" Margin="44,81,0,0" Name="textBox1" Text="" VerticalAlignment="Top" Width="601" />
-            <TextBlock Name="textBlock1" Text="Enter penalty description" VerticalAlignment="Top" />
+        <Grid x:Name="ContentPanel" Margin="12,0" Grid.RowSpan="2" >
+            <TextBox Height="84" HorizontalAlignment="Center" Margin="44,81,0,0" Name="textBox1" Text="" VerticalAlignment="Top" Width="601" />
+            <TextBlock Name="textBlock1" Text="Enter penalty description" VerticalAlignment="Top" HorizontalAlignment="Center" />
             <ListBox Height="139" HorizontalAlignment="Left" Margin="243,237,0,0" Name="listBox1" VerticalAlignment="Top" Width="244" BorderBrush="Silver" BorderThickness="2" />
             <TextBlock FontSize="40" Height="55" HorizontalAlignment="Stretch" Margin="131,176,115,0" Name="textBlock2" Text="Time in penalty Box" VerticalAlignment="Top" Width="458" Foreground="White"/>
             <Button Content="Cancel" Height="72" HorizontalAlignment="Left" Margin="6,402,0,0" Name="button1" VerticalAlignment="Top" Width="160" />

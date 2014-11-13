@@ -30,10 +30,8 @@
 			Added back and next buttons
 		-->
         <!--TitlePanel contains the name of the application and page title-->
-        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28" Orientation="Horizontal">
-        	<Button x:Name="BackBtn" Content="Back" Click="BackBtn_Click" />
-            <TextBlock x:Name="PageTitle" Text="Player Number" Style="{StaticResource PhoneTextTitle1Style}" TextAlignment="Center"/>
-			<Button x:Name="NextBtn" Content="Next" Click="NextBtn_Click" />
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" >
+            <TextBlock x:Name="PageTitle" Text="Player Number" TextAlignment="Center" />
         </StackPanel>
 		
 		<!-- Edited by Jinho
@@ -41,16 +39,6 @@
 			Edited buttons properties
 		-->
         <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1">
-            <Button FontSize="40" Foreground="White" Height="107" Margin="0,6,470,218" x:Name="textBox4" Content="3" Width="225" />
-           	<Button FontSize="40" Foreground="White" Height="107" Margin="231,6,239,218" x:Name="textBox1" Content="6" Width="225"/>
-            <Button FontSize="40" Foreground="White" Height="107" Margin="462,6,8,218" x:Name="textBox2" Content="8" Width="225"/>
-            <Button FontSize="40" Foreground="White" Height="107" Margin="0,98,470,105" x:Name="textBox3" Content="11" Width="225"/>
-            <Button FontSize="40" Foreground="White" Height="107" Margin="231,98,239,105" x:Name="textBox5" Content="13" Width="225"/>
-            <Button FontSize="40" Foreground="White" Height="107" Margin="462,98,8,105" x:Name="textBox6" Content="26" Width="225"/>
-            <Button FontSize="40" Foreground="White" Height="107" Margin="0,203,470,0" x:Name="textBox7" Content="34" Width="225"/>
-            <Button FontSize="40" Foreground="White" Height="107" Margin="231,203,239,0" x:Name="textBox8" Content="45" Width="225"/>
-            <Button FontSize="40" Foreground="White" Height="107" Margin="464,203,6,0" x:Name="textBox9" Content="59" Width="225"/>
-        </Grid>
+        <Grid x:Name="ContentPanel" Grid.Row="1"></Grid>
     </Grid>
 </phone:PhoneApplicationPage>

@@ -27,7 +27,7 @@
         </Grid.RowDefinitions>
         <StackPanel Margin="12,17,0,0" Name="TitlePanel">
             <TextBlock Margin="9,-7,0,0" Name="PageTitle" Text="Post Game Results" TextAlignment="Center" />
-            <ListBox Background="Azure" Height="272" Name="listBox1" Width="449" />
+            <ListBox Background="White" Height="272" Name="listBox1" Width="449" />
             <Canvas Height="123" Name="canvas1" Width="716">
                 <Button Content="Continue" Height="71" Name="button3" Width="160" Click="button3_Click" Canvas.Left="550" Canvas.Top="33" />
                 <Button Content="Overtime" Height="71" Name="button2" Width="160" Click="button2_Click" Canvas.Left="274" Canvas.Top="33" />
