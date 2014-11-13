@@ -32,5 +32,10 @@ namespace icehockeyWA.Views
             // TODO: Add event handler implementation here.
             NavigationService.Navigate(new Uri("/Views/ReviewGameView.xaml", UriKind.Relative));
         }
+
+        private void SkipToButton_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Views/SignatureView.xaml", UriKind.Relative));
+        }
     }
 }

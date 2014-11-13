@@ -12,11 +12,16 @@ using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
 using System.Windows.Threading;
 using icehockeyWA.Models;
+using Microsoft.Phone.Shell;
 
 namespace icehockeyWA.Views
 {
     public partial class GameView : PhoneApplicationPage
     {
+
+        PhoneApplicationService phoneAppService = PhoneApplicationService.Current;
+        Game myGame;
+
         /* By Jinho
          * */
         //Declare timer, time
@@ -39,7 +44,33 @@ namespace icehockeyWA.Views
             //Initialize time
             time = new TimeSpan(0, 20, 0);
             second = new TimeSpan(0, 0, 1);
+
+            loadGame("ConfirmGameView");
             createGame();
+        }
+
+        private void loadGame(string s) {
+            object temp;
+
+            //check which screen the previous one was
+            if (phoneAppService.State.ContainsKey("sender"))
+            {
+                if (phoneAppService.State.TryGetValue("sender", out temp))
+                {
+
+                    //if it was the correct screen, read in the game
+                    if (temp.ToString().Equals(s))
+                    {
+                        if (phoneAppService.State.ContainsKey("myGame"))
+                        {
+                            if (phoneAppService.State.TryGetValue("myGame", out temp))
+                            {
+                                myGame = (Game)temp;
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         /* By Jinho
@@ -54,35 +85,39 @@ namespace icehockeyWA.Views
 
         private void LeftShotBtn_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-        	// TODO: Add event handler implementation here.
+            myGame.homeTeam.addShot();
         }
 		
 		 private void LeftGoalBtn_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-        	// TODO: Add event handler implementation here.
+            saveGame();
+            phoneAppService.State["sender"] = "home";
 			NavigationService.Navigate(new Uri("/Views/PlayerNumberView.xaml", UriKind.Relative));
         }
 		
 		private void LeftPenaltyBtn_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-        	// TODO: Add event handler implementation here.
+            saveGame();
+            phoneAppService.State["sender"] = "home";
 			NavigationService.Navigate(new Uri("/Views/PenaltyView.xaml", UriKind.Relative));
         }
 		
         private void RightShotBtn_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-        	// TODO: Add event handler implementation here.
+            myGame.awayTeam.addShot();
         }
 
         private void RightGoalBtn_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-        	// TODO: Add event handler implementation here.
+            saveGame();
+            phoneAppService.State["sender"] = "away";
 			NavigationService.Navigate(new Uri("/Views/PlayerNumberView.xaml", UriKind.Relative));
         }
 
         private void RIghtPenaltyBtn_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-        	// TODO: Add event handler implementation here.
+            saveGame();
+            phoneAppService.State["sender"] = "away"; 
 			NavigationService.Navigate(new Uri("/Views/PenaltyView.xaml", UriKind.Relative));
         }
 		
@@ -109,19 +144,18 @@ namespace icehockeyWA.Views
             }
         }
 
+        private void saveGame()
+        {
+            phoneAppService.State["myGame"] = myGame;
+        }
+
         public void createGame()
         {
-            currentGame = new Game(123, System.DateTime.Today, "Location", "Super League");
-            currentGame.setHomeTeam(185, "MyHome Team", 12, "MyManager Name");
-            currentGame.setAwayTeam(456, "YourAway Team", 390, "YourManager Name");
-
-            currentGame.beginGame();
-            PeriodTb.DataContext = currentGame;
-            ScoreTb.DataContext = currentGame;
-
-            currentGame.homeTeam.addGoal();
-            HomeTeamTb.DataContext = currentGame.homeTeam;
-            AwayTeamTb.DataContext = currentGame.awayTeam;
+            myGame.beginGame();
+            PeriodTb.DataContext = myGame;
+            ScoreTb.DataContext = myGame;
+            HomeTeamTb.DataContext = myGame.homeTeam;
+            AwayTeamTb.DataContext = myGame.awayTeam;
         }
     }
 }

@@ -10,6 +10,7 @@ using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Collections.Generic;
 
 namespace icehockeyWA.Models
 {
@@ -35,7 +36,7 @@ namespace icehockeyWA.Models
         }
         private int shotCounter;
         private int penaltyCounter;
-        //private Player[] players;
+        public List<Player> players;
         private int managerID;
         private string managerName;
         private bool managerSignedOff;
@@ -56,6 +57,32 @@ namespace icehockeyWA.Models
             shotCounter = 0;
             penaltyCounter = 0;
             managerSignedOff = false;
+            players = new List<Player>();
+        }
+
+        public void addPlayer(int id, string name, int num)
+        {
+            players.Add(new Player(id, name, num));
+        }
+
+        public void addGoalie(int id, string name, int num)
+        {
+            players.Add(new Goalie(id, name, num));
+        }
+
+        public void addShot()
+        {
+            shotCounter++;
+        }
+
+        public int countPlayers()
+        {
+            return players.Count;
+        }
+
+        public int getNumberForPlayer(int index)
+        {
+            return players[index].number;
         }
 
         public int getTeamID()
