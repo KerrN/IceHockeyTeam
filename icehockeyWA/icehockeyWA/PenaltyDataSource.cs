@@ -11,8 +11,6 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Microsoft.Phone.Controls.Primitives;
 
-//made by jinho, fixed by josh
-
 namespace Penalty
 {
 	public class PenaltyDataSource : ILoopingSelectorDataSource

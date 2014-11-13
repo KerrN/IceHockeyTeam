@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="IceWAService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://student.mydesign.central.wa.edu.au/IceWA_Virtual/IceWAService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://student.mydesign.central.wa.edu.au/IceWA_Virtual/IceWAService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://student.mydesign.central.wa.edu.au/IceWA_Virtual/IceWAService.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://student.mydesign.central.wa.edu.au/IceWA_Virtual/IceWAService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/IceWAService" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IIceWAService_returnTeams_InputMessage">
+    <wsdl:part name="parameters" element="tns:returnTeams" />
+  </wsdl:message>
+  <wsdl:message name="IIceWAService_returnTeams_OutputMessage">
+    <wsdl:part name="parameters" element="tns:returnTeamsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIceWAService_getDivisions_InputMessage">
+    <wsdl:part name="parameters" element="tns:getDivisions" />
+  </wsdl:message>
+  <wsdl:message name="IIceWAService_getDivisions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getDivisionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIceWAService_returnGameDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:returnGameDetails" />
+  </wsdl:message>
+  <wsdl:message name="IIceWAService_returnGameDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:returnGameDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIceWAService_returnSchedule_InputMessage">
+    <wsdl:part name="parameters" element="tns:returnSchedule" />
+  </wsdl:message>
+  <wsdl:message name="IIceWAService_returnSchedule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:returnScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIceWAService_returnPlayers_InputMessage">
+    <wsdl:part name="parameters" element="tns:returnPlayers" />
+  </wsdl:message>
+  <wsdl:message name="IIceWAService_returnPlayers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:returnPlayersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIceWAService_searchPlayers_InputMessage">
+    <wsdl:part name="parameters" element="tns:searchPlayers" />
+  </wsdl:message>
+  <wsdl:message name="IIceWAService_searchPlayers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:searchPlayersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIceWAService_addGoal_InputMessage">
+    <wsdl:part name="parameters" element="tns:addGoal" />
+  </wsdl:message>
+  <wsdl:message name="IIceWAService_addGoal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addGoalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIceWAService_addPenalty_InputMessage">
+    <wsdl:part name="parameters" element="tns:addPenalty" />
+  </wsdl:message>
+  <wsdl:message name="IIceWAService_addPenalty_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addPenaltyResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IIceWAService">
+    <wsdl:operation name="returnTeams">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIceWAService/returnTeams" message="tns:IIceWAService_returnTeams_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIceWAService/returnTeamsResponse" message="tns:IIceWAService_returnTeams_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getDivisions">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIceWAService/getDivisions" message="tns:IIceWAService_getDivisions_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIceWAService/getDivisionsResponse" message="tns:IIceWAService_getDivisions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="returnGameDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIceWAService/returnGameDetails" message="tns:IIceWAService_returnGameDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIceWAService/returnGameDetailsResponse" message="tns:IIceWAService_returnGameDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="returnSchedule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIceWAService/returnSchedule" message="tns:IIceWAService_returnSchedule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIceWAService/returnScheduleResponse" message="tns:IIceWAService_returnSchedule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="returnPlayers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIceWAService/returnPlayers" message="tns:IIceWAService_returnPlayers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIceWAService/returnPlayersResponse" message="tns:IIceWAService_returnPlayers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="searchPlayers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIceWAService/searchPlayers" message="tns:IIceWAService_searchPlayers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIceWAService/searchPlayersResponse" message="tns:IIceWAService_searchPlayers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addGoal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIceWAService/addGoal" message="tns:IIceWAService_addGoal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIceWAService/addGoalResponse" message="tns:IIceWAService_addGoal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addPenalty">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIceWAService/addPenalty" message="tns:IIceWAService_addPenalty_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIceWAService/addPenaltyResponse" message="tns:IIceWAService_addPenalty_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IIceWAService" type="tns:IIceWAService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="returnTeams">
+      <soap:operation soapAction="http://tempuri.org/IIceWAService/returnTeams" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDivisions">
+      <soap:operation soapAction="http://tempuri.org/IIceWAService/getDivisions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="returnGameDetails">
+      <soap:operation soapAction="http://tempuri.org/IIceWAService/returnGameDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="returnSchedule">
+      <soap:operation soapAction="http://tempuri.org/IIceWAService/returnSchedule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="returnPlayers">
+      <soap:operation soapAction="http://tempuri.org/IIceWAService/returnPlayers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchPlayers">
+      <soap:operation soapAction="http://tempuri.org/IIceWAService/searchPlayers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addGoal">
+      <soap:operation soapAction="http://tempuri.org/IIceWAService/addGoal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addPenalty">
+      <soap:operation soapAction="http://tempuri.org/IIceWAService/addPenalty" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="IceWAService">
+    <wsdl:port name="BasicHttpBinding_IIceWAService" binding="tns:BasicHttpBinding_IIceWAService">
+      <soap:address location="http://student.mydesign.central.wa.edu.au/IceWA_Virtual/IceWAService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

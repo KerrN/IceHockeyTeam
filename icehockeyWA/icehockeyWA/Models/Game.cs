@@ -17,22 +17,27 @@ namespace icehockeyWA.Models
 {
     public class Game : INotifyPropertyChanged
     {
-        private int gameID;
+        public int gameID;
         public Team homeTeam;
         public Team awayTeam;
-        private DateTime gameTime;
-        private string venue;
-        private string division;
-        private List<Official> officials;
-        private string notes;
-//      private Event[] events;
-        private string currentPeriod;
+        public DateTime gameTime;
+        public string venue { get; set; }
+        public string division;
+        public List<Official> officials;
+        public string notes;
+        //      public Event[] events;
+        public string currentPeriod;
         public string CurrentPeriod
         {
             get
             {
                 return currentPeriod;
             }
+        }
+
+        public string CurrentScore { get{
+            return homeTeam.getGoalCounter() + " | " + awayTeam.getGoalCounter() ;
+        }
         }
 
 
@@ -81,6 +86,26 @@ namespace icehockeyWA.Models
             officials.Add(new Official(officialID, name, type));
         }
 
+        public void addOfficial(string name, string type)
+        {
+            officials.Add(new Official(name, type));
+        }
+
+
+        public List<Official> getOfficialsByType(string type)
+        {
+            List<Official> result = new List<Official>();
+
+            for(int i = 0; i < officials.Count; i++)
+            {
+                if(officials[i].getType().Equals(type))
+                {
+                    result.Add(officials[i]);
+                }
+            }
+
+            return result;
+        }
 
         public event PropertyChangedEventHandler PropertyChanged;
         private void PropChanged(string propName)

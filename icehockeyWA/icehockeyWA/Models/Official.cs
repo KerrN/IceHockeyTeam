@@ -13,11 +13,21 @@ namespace icehockeyWA.Models
 {
     public class Official
     {
-        private int officialID;
-        private string name;
-        private bool signedOff;
+        public int officialID;
+        public string name { get; set; }
+        public bool signedOff;
         //private Uri signature;
-        private string type;
+        public string type;
+
+        public Official(string name, string type)
+        {
+            //this.officialID = officialID;
+            this.name = name;
+            this.type = type;
+
+            signedOff = false;
+            //signature = new Uri();
+        }
 
         public Official(int officialID, string name, string type)
         {

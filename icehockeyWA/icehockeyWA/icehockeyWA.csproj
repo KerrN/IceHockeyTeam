@@ -53,6 +53,8 @@
     <Reference Include="Microsoft.Phone" />
     <Reference Include="Microsoft.Phone.Controls.Toolkit, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b772ad94eb9ca604, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.Phone.Interop" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Windows" />
     <Reference Include="system" />
     <Reference Include="System.Core" />
@@ -64,9 +66,18 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Models\EventModel.cs" />
-    <Compile Include="Models\PenaltyModel.cs" />
-    <Compile Include="Models\RelayCommand.cs" />
+    <Compile Include="Models\Event.cs" />
+    <Compile Include="Models\Goal.cs" />
+    <Compile Include="Models\Goalie.cs" />
+    <Compile Include="Models\Injury.cs" />
+    <Compile Include="Models\Penalty.cs" />
+    <Compile Include="Models\Player.cs" />
+    <Compile Include="Models\Timeout.cs" />
+    <Compile Include="Service References\IceIceBaby\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="ViewModels\AssistViewModel.cs" />
     <Compile Include="ViewModels\ChangeGoalieViewModel.cs" />
     <Compile Include="ViewModels\EditTeamViewModel.cs" />
@@ -83,7 +94,6 @@
     <Compile Include="ViewModels\PostGameViewModel.cs" />
     <Compile Include="ViewModels\ReviewGameViewModel.cs" />
     <Compile Include="ViewModels\SelectGameViewModel.cs" />
-    <Compile Include="ViewModels\ViewModelBase.cs" />
     <Compile Include="Views\AssistView.xaml.cs">
       <DependentUpon>AssistView.xaml</DependentUpon>
     </Compile>
@@ -144,9 +154,6 @@
       <DependentUpon>SelectGameView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\Team.cs" />
-    <Compile Include="Views\Signature.xaml.cs">
-      <DependentUpon>Signature.xaml</DependentUpon>
-    </Compile>
     <Compile Include="TimeDataSource.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -226,14 +233,40 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\Signature.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AppManifest.xml" />
     <None Include="Properties\WMAppManifest.xml" />
+    <None Include="Service References\IceIceBaby\icehockeyWA.IceIceBaby.TempGame.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\IceIceBaby\icehockeyWA.IceIceBaby.TempGameDetails.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\IceIceBaby\icehockeyWA.IceIceBaby.TempPlayer.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\IceIceBaby\IceWAService.disco" />
+    <None Include="Service References\IceIceBaby\configuration91.svcinfo" />
+    <None Include="Service References\IceIceBaby\configuration.svcinfo" />
+    <None Include="Service References\IceIceBaby\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="ServiceReferences.ClientConfig" />
+    <None Include="Service References\IceIceBaby\IceWAService.wsdl" />
+    <None Include="Service References\IceIceBaby\IceWAService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\IceIceBaby\IceWAService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\IceIceBaby\IceWAService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\IceIceBaby\IceWAService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <Resource Include="Resources\Divider.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
@@ -254,6 +287,9 @@
     <Content Include="Resources\IceWABackGroundImg.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Resource Include="Resources\Menu_Background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Content Include="Resources\Player.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -265,7 +301,12 @@
     </Resource>
     <Resource Include="Resources\icewa-logo.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\IceIceBaby\" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

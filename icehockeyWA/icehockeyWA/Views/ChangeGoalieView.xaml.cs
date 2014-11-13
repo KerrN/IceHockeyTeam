@@ -18,16 +18,16 @@ namespace icehockeyWA.Views
         public ChangeGoalieView()
         {
             InitializeComponent();
-            this.listBox1.Items.Add("1");
-            this.listBox1.Items.Add("2");
-            this.listBox1.Items.Add("3");
-            this.listBox1.Items.Add("4");
-            this.listBox1.Items.Add("5");
-            this.listBox1.Items.Add("6");
-            this.listBox1.Items.Add("7");
-            this.listBox1.Items.Add("8");
-            this.listBox1.Items.Add("9");
-            this.listBox1.Items.Add("10");
+            this.lstBoxGoalies.Items.Add("1");
+            this.lstBoxGoalies.Items.Add("2");
+            this.lstBoxGoalies.Items.Add("3");
+            this.lstBoxGoalies.Items.Add("4");
+            this.lstBoxGoalies.Items.Add("5");
+            this.lstBoxGoalies.Items.Add("6");
+            this.lstBoxGoalies.Items.Add("7");
+            this.lstBoxGoalies.Items.Add("8");
+            this.lstBoxGoalies.Items.Add("9");
+            this.lstBoxGoalies.Items.Add("10");
         }
 
         private void button3_Click(object sender, RoutedEventArgs e)

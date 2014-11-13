@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4e520bd9-f4cc-4458-bacf-9f840f3ecf95" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://student.mydesign.central.wa.edu.au/icewa_virtual/IceWAService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="IceWAService.disco" MetadataType="Disco" ID="3d192018-0981-4765-91f0-b4fb9835d87f" SourceId="1" SourceUrl="http://student.mydesign.central.wa.edu.au/IceWA_Virtual/IceWAService.svc?disco" />
+    <MetadataFile FileName="IceWAService.wsdl" MetadataType="Wsdl" ID="5f64f7b9-759c-46b7-b810-7b6e157f7af1" SourceId="1" SourceUrl="http://student.mydesign.central.wa.edu.au/IceWA_Virtual/IceWAService.svc?wsdl" />
+    <MetadataFile FileName="IceWAService.xsd" MetadataType="Schema" ID="eeca7abb-4809-4f52-ab75-ddbb845822f5" SourceId="1" SourceUrl="http://student.mydesign.central.wa.edu.au/IceWA_Virtual/IceWAService.svc?xsd=xsd0" />
+    <MetadataFile FileName="IceWAService1.xsd" MetadataType="Schema" ID="427ff4f9-ea99-4384-987e-a56bbdc7e546" SourceId="1" SourceUrl="http://student.mydesign.central.wa.edu.au/IceWA_Virtual/IceWAService.svc?xsd=xsd1" />
+    <MetadataFile FileName="IceWAService2.xsd" MetadataType="Schema" ID="f3d4e70e-be4d-4e3b-ad76-e50ce1fe586f" SourceId="1" SourceUrl="http://student.mydesign.central.wa.edu.au/IceWA_Virtual/IceWAService.svc?xsd=xsd2" />
+    <MetadataFile FileName="IceWAService3.xsd" MetadataType="Schema" ID="ce34b4c7-46d3-4ffd-9256-a53e34a642c0" SourceId="1" SourceUrl="http://student.mydesign.central.wa.edu.au/IceWA_Virtual/IceWAService.svc?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -11,8 +11,6 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Microsoft.Phone.Controls.Primitives;
 
-
-// made by jinho, fixed by josh
 namespace Penalty
 {
 	public class PlayerDataSource : ILoopingSelectorDataSource
@@ -20,41 +18,40 @@ namespace Penalty
         private int minimum = 0;
 		private int maximum;
 		private int selectedItem = 0;
-        private List<string> dataArray;
+        private string[] playerArray;
 
-        public PlayerDataSource(List<string> dataArray)
+		public PlayerDataSource()
 		{
 			// Insert code required on object creation below this point.
-           
-            this.dataArray = dataArray;
-            maximum = dataArray.Count - 1; 
-
+            playerArray = new string[10]{"Player1", "Player2", "Player3", "Player4",
+                "Player5", "Player6", "Player7", "Player8", "Player9", "Player10"};
+            maximum = playerArray.Length - 1;
 		}
 
         public object GetNext(object relativeTo)
         {
-            int nextIndex = dataArray.IndexOf((string)relativeTo) + 1;
+            int nextIndex = Array.IndexOf(playerArray, relativeTo) + 1;
 
-            return dataArray[nextIndex <= maximum ? nextIndex : minimum];
+            return playerArray[nextIndex <= maximum ? nextIndex : minimum];
         }
 
         public object GetPrevious(object relativeTo)
         {
-            var previousIndex = dataArray.IndexOf((string)relativeTo) - 1;
+            var previousIndex = Array.IndexOf(playerArray, relativeTo) - 1;
 
-            return dataArray[previousIndex >= minimum ? previousIndex : maximum];
+            return playerArray[previousIndex >= minimum ? previousIndex : maximum];
         }
 
         public object SelectedItem
         {
             get
             {
-                return dataArray[selectedItem];
+                return playerArray[selectedItem];
 			}
 			set
 			{
 				var oldIndex = selectedItem;
-                var newIndex = dataArray.IndexOf((string)value);
+				var newIndex = Array.IndexOf(playerArray, value);
 
                 if (oldIndex == newIndex)
 					return;
