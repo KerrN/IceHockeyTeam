@@ -66,4 +66,55 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="TempPlayer" nillable="true" type="tns:TempPlayer" />
+  <xs:complexType name="ArrayOfTempGoal">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TempGoal" nillable="true" type="tns:TempGoal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTempGoal" nillable="true" type="tns:ArrayOfTempGoal" />
+  <xs:complexType name="TempGoal">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Event">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="assist1Player" type="xs:int" />
+          <xs:element minOccurs="0" name="assist2Player" type="xs:int" />
+          <xs:element minOccurs="0" name="gameID" type="xs:int" />
+          <xs:element minOccurs="0" name="goalID" type="xs:int" />
+          <xs:element minOccurs="0" name="penaltyShootout" type="xs:boolean" />
+          <xs:element minOccurs="0" name="playerID" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TempGoal" nillable="true" type="tns:TempGoal" />
+  <xs:complexType name="Event">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="eventID" type="xs:int" />
+      <xs:element minOccurs="0" name="eventTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="period" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="teamID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Event" nillable="true" type="tns:Event" />
+  <xs:complexType name="ArrayOfTempPenalty">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TempPenalty" nillable="true" type="tns:TempPenalty" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTempPenalty" nillable="true" type="tns:ArrayOfTempPenalty" />
+  <xs:complexType name="TempPenalty">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Event">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="gameID" type="xs:int" />
+          <xs:element minOccurs="0" name="minutes" type="xs:int" />
+          <xs:element minOccurs="0" name="offence" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="penaltyID" type="xs:int" />
+          <xs:element minOccurs="0" name="penaltyShootout" type="xs:boolean" />
+          <xs:element minOccurs="0" name="playerID" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TempPenalty" nillable="true" type="tns:TempPenalty" />
 </xs:schema>

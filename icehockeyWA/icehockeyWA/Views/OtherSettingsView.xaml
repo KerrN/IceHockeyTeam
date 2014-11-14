@@ -47,11 +47,13 @@
 				<ColumnDefinition/>
 			</Grid.ColumnDefinitions>
 
-        	<Button Grid.Column="0" Grid.Row="0" Content="Edit Team/Officals" Width="300" Height="125" x:Name="EditTeamBtn"/>
-            <Button Grid.Column="1" Grid.Row="0" Content="Notes" Width="300" Height="125" x:Name="NotesBtn" Click="NotesBtn_Click"/>
-            <Button Grid.Column="1" Grid.Row="1" Content="Injury" Width="300" Height="125" x:Name="ShootOutBtn"/>
-			<Button Grid.Row="1" Content="Log" Width="300" Height="125" x:Name="LogBtn" Click="LogBtn_Click" Margin="32,6,32,7" />
-			<Button Grid.Row="2" Content="Cancel Game" Width="300" Height="125" x:Name="CancelGameBtn" Background="#A8FF0000" Click="CancelGameBtn_Click" Grid.ColumnSpan="2" Margin="219,0,209,12" />
+        	<Button Content="Edit Team/Officals" Height="125" x:Name="EditTeamBtn" Margin="0,1,113,2" />
+            <Button Content="Notes" Height="125" x:Name="NotesBtn" Click="NotesBtn_Click" Margin="247,123,230,9" Grid.RowSpan="2" Grid.ColumnSpan="2" />
+            <Button Content="Injury" Height="125" x:Name="injuryBtn" Margin="247,1,230,2" Grid.ColumnSpan="2" />
+			<Button Content="Log" Height="125" x:Name="LogBtn" Click="LogBtn_Click" Margin="0,123,113,9" Grid.RowSpan="2" />
+			<Button Content="Cancel Game" Height="125" x:Name="CancelGameBtn" Background="#A8FF0000" Click="CancelGameBtn_Click" Margin="247,3,230,0" Grid.Row="2" Grid.ColumnSpan="2" />
+            <Button Content="Extra Time" Height="125" Margin="126,123,-13,9" Name="extraTimeBtn" Grid.RowSpan="2" Grid.Column="1" />
+            <Button Content="Change Goalie" Height="125" Margin="126,0,-13,3" Name="changeGoalieBtn" Grid.Column="1" Click="changeGoalieBtn_Click" />
         </Grid>
     </Grid>
 </phone:PhoneApplicationPage>

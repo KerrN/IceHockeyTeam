@@ -36,5 +36,16 @@ namespace icehockeyWA.Models
             this.offence = offence;
             penaltyShootout = penalty;
         }
+
+        public override string ToString()
+        {
+            int delta = 0;
+            string s = period +
+                ": Player (ID ";
+           s+=playerID + ") from team (ID " + teamID + ") was penalised!";
+           s += "\r\n\t\t\tThe penalty was for " + minutes + " minutes, for " + offence + ".";
+
+            return s;
+        }
     }
 }

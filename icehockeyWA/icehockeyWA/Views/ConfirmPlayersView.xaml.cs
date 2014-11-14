@@ -79,7 +79,7 @@ namespace icehockeyWA.Views
         //check that the teams are valid
         private void savePlayers()
         {
-          /*  if (listBox2.SelectedItems.Count != 1 || listBox3.SelectedItems.Count != 1)
+            if (listBox2.SelectedItems.Count != 1 || listBox3.SelectedItems.Count != 1)
             {
                 MessageBox.Show("You have not selected a goalie for each team!", "Invalid Goalie", MessageBoxButton.OK);
             }
@@ -88,9 +88,9 @@ namespace icehockeyWA.Views
                 MessageBox.Show("You do not have enough players for each team!", "Insufficient Players", MessageBoxButton.OK);
             }
             else
-            {*/
+            {
                 createPlayers();
-           // }
+            }
         }
 
         //this will create the player objects

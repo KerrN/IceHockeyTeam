@@ -13,7 +13,7 @@ namespace icehockeyWA.Models
 {
     public class Event
     {
-
+        
         public static int nextID = 0;
 
         public static int getNextID()
@@ -33,6 +33,11 @@ namespace icehockeyWA.Models
             teamID = team;
             eventTime = DateTime.Now;
             this.period = period;
+        }
+
+        public override string ToString()
+        {
+            return base.ToString();
         }
     }
 }

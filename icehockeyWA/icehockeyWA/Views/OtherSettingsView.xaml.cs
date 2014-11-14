@@ -49,6 +49,12 @@ namespace icehockeyWA.Views
 				NavigationService.Navigate(new Uri("/Views/EntranceView.xaml", UriKind.Relative));
 			}			
         }
+
+        private void changeGoalieBtn_Click(object sender, RoutedEventArgs e)
+        {
+            // TODO: Add event handler implementation here.
+            NavigationService.Navigate(new Uri("/Views/ChangeGoalieView.xaml", UriKind.Relative));
+        }
         
     }
 }

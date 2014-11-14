@@ -36,5 +36,21 @@ namespace icehockeyWA.Models
             this.assist2Player = assist2Player;
             penaltyShootout = penalty;
         }
+
+        public override string ToString()
+        {
+            string s = period + ": Player (ID " + playerID + ") from team (ID " + teamID + ") scored a goal!";
+
+            if (assist1Player != -1 && assist2Player != -1)
+            {
+                s += "\r\n\t\t\tPlayers (ID " + assist1Player + ") and (ID " + assist2Player + ") assisted!";
+            }
+            else if (assist1Player != -1)
+            {
+                s += "\r\n\t\t\tPlayer (ID " + assist1Player + ") assisted!";
+            }
+
+            return s;
+        }
     }
 }

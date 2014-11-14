@@ -28,5 +28,30 @@ namespace icehockeyWA.Models
             goals = 0;
             assists = 0;
         }
+
+        public void addGoalAgainst()
+        {
+            //this is a stub
+        }
+
+        public void addShotAgainst()
+        {
+            //this is a stub
+        }
+
+        public void addGoal()
+        {
+            goals++;
+        }
+
+        public void addAssist()
+        {
+            assists++;
+        }
+
+        public override string ToString()
+        {
+            return name + " (" + number + ")";
+        }
     }
 }

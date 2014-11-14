@@ -66,6 +66,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\addPlayerView.xaml.cs">
+      <DependentUpon>addPlayerView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Models\Event.cs" />
     <Compile Include="Models\Goal.cs" />
     <Compile Include="Models\Goalie.cs" />
@@ -164,6 +167,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
+    <Page Include="Models\addPlayerView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\AssistView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

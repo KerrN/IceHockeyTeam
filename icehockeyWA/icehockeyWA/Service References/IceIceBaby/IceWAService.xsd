@@ -71,6 +71,32 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="getPenaltyOptions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="type" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getPenaltyOptionsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="getPenaltyOptionsResult" nillable="true" type="q6:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getPenaltyTypes">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getPenaltyTypesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="getPenaltyTypesResult" nillable="true" type="q7:ArrayOfKeyValueOfstringint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="searchPlayers">
     <xs:complexType>
       <xs:sequence>
@@ -81,49 +107,59 @@
   <xs:element name="searchPlayersResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/IceWAService" minOccurs="0" name="searchPlayersResult" nillable="true" type="q6:ArrayOfTempPlayer" />
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/IceWAService" minOccurs="0" name="searchPlayersResult" nillable="true" type="q8:ArrayOfTempPlayer" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="addGoal">
+  <xs:element name="addGoals">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="ID" type="xs:int" />
-        <xs:element minOccurs="0" name="gameID" type="xs:int" />
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/IceWAService" minOccurs="0" name="goals" nillable="true" type="q9:ArrayOfTempGoal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addGoalsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="addGoalsResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addPenalties">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/IceWAService" minOccurs="0" name="penalties" nillable="true" type="q10:ArrayOfTempPenalty" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addPenaltiesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="addPenaltiesResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="insertPlayer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+        <xs:element minOccurs="0" name="stupidID" type="xs:int" />
         <xs:element minOccurs="0" name="teamID" type="xs:int" />
-        <xs:element minOccurs="0" name="playerID" type="xs:int" />
-        <xs:element minOccurs="0" name="period" type="xs:int" />
-        <xs:element minOccurs="0" name="time" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="playass1ID" type="xs:int" />
-        <xs:element minOccurs="0" name="playass2ID" type="xs:int" />
+        <xs:element minOccurs="0" name="pos" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="number" type="xs:int" />
+        <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="adress" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="phone" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="email" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="parent" type="xs:int" />
+        <xs:element minOccurs="0" name="dob" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="addGoalResponse">
+  <xs:element name="insertPlayerResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="addGoalResult" nillable="true" type="xs:string" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="addPenalty">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element minOccurs="0" name="ID" type="xs:int" />
-        <xs:element minOccurs="0" name="gameID" type="xs:int" />
-        <xs:element minOccurs="0" name="teamID" type="xs:int" />
-        <xs:element minOccurs="0" name="playerID" type="xs:int" />
-        <xs:element minOccurs="0" name="period" type="xs:int" />
-        <xs:element minOccurs="0" name="time" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="Offence" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="timeGiven" type="xs:int" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="addPenaltyResponse">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element minOccurs="0" name="addPenaltyResult" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="insertPlayerResult" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

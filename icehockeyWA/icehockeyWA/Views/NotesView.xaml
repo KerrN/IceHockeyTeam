@@ -22,21 +22,23 @@
         </Grid.Background>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
+            <RowDefinition Height="157" />
+            <RowDefinition Height="323*" />
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0" Margin="12,17,0,28" Name="TitlePanel"></StackPanel>
-        <Grid Grid.Row="1" Margin="12,0,12,0" Name="ContentPanel">
-            <TextBox Height="237" HorizontalAlignment="Left" Margin="61,0,0,0" Name="textBox1" Text="" VerticalAlignment="Top" Width="601" />
-            <Button Content="Add" Height="95" HorizontalAlignment="Right" Margin="0,218,42,0" Name="Add_but" VerticalAlignment="Top" Width="206" />
-            <Button Content="Cancel" Height="95" HorizontalAlignment="Left" Margin="61,224,0,0" Name="button1" VerticalAlignment="Top" Width="206" />
+        <Grid Grid.Row="1" Margin="12,0,12,-23" Name="ContentPanel">
+            <TextBox Height="78" HorizontalAlignment="Left" Margin="61,175,0,0" Name="textBox1" Text="" VerticalAlignment="Top" Width="601" />
+            <Button Content="Add" Height="95" HorizontalAlignment="Right" Margin="0,243,42,0" Name="Add_but" VerticalAlignment="Top" Width="206" Click="Add_but_Click" />
+            <Button Content="Cancel" Height="95" HorizontalAlignment="Left" Margin="61,243,0,0" Name="button1" VerticalAlignment="Top" Width="206" Click="button1_Click" />
+            <TextBox Height="237" HorizontalAlignment="Left" Margin="61,-68,0,0" Name="textBox2" Text="" VerticalAlignment="Top" Width="601" IsReadOnly="True" />
         </Grid>
-        <Grid Height="100" Margin="24,50,0,11" Name="grid1">
+        <Grid Height="80" Margin="24,17,0,64" Name="grid1">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="446*" />
+                <ColumnDefinition Width="93*" />
+                <ColumnDefinition Width="353*" />
                 <ColumnDefinition Width="258*" />
             </Grid.ColumnDefinitions>
-            <TextBlock Margin="119,-2,143,6" Name="PageTitle" Text="NOTES" Width="442" Grid.ColumnSpan="2" HorizontalAlignment="Center" />
+            <TextBlock Margin="26,4,143,0" Name="PageTitle" Text="NOTES" Width="442" Grid.ColumnSpan="2" HorizontalAlignment="Center" Grid.Column="1" />
         </Grid>
     </Grid>
 </phone:PhoneApplicationPage>

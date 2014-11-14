@@ -28,6 +28,7 @@ namespace icehockeyWA.Views
         static DispatcherTimer timer;
         static TimeSpan time;
         static TimeSpan second;
+        bool betweenPeriods = false;
 
         public Game currentGame;
 
@@ -35,18 +36,22 @@ namespace icehockeyWA.Views
         public GameView()
         {
             InitializeComponent();
-
-            //Initialize timer
-            timer = new DispatcherTimer();
-            timer.Interval = new TimeSpan(0, 0, 1);            
-            timer.Tick += new EventHandler(TimerTick);
-            
-            //Initialize time
-            time = new TimeSpan(0, 20, 0);
-            second = new TimeSpan(0, 0, 1);
+            initialiseTimer();
 
             loadGame("ConfirmGameView");
             createGame();
+        }
+
+        private void initialiseTimer()
+        {
+            //Initialize timer
+            timer = new DispatcherTimer();
+            timer.Interval = new TimeSpan(0, 0, 1);
+            timer.Tick += new EventHandler(TimerTick);
+
+            //Initialize time
+            time = new TimeSpan(0, 20, 0);
+            second = new TimeSpan(0, 0, 1);
         }
 
         private void loadGame(string s) {
@@ -80,12 +85,24 @@ namespace icehockeyWA.Views
         void TimerTick(object sender, EventArgs e)
         {
             time = time - second;        
-            TimerBtn.Content = time.Minutes + ":" + time.Seconds;            
+            TimerBtn.Content = time.Minutes + ":" + time.Seconds;
+
+            if ((time.Minutes + ":" + time.Seconds).ToString().Equals("0:0") )
+            {
+                betweenPeriods = true;
+                timer.Stop();
+                TimerBtn.Content = "Next Period";
+                TimerBtn.Foreground = new SolidColorBrush(Colors.Red);
+            }
         }
 
         private void LeftShotBtn_Click(object sender, System.Windows.RoutedEventArgs e)
         {
+            //the home team took a shot
             myGame.homeTeam.addShot();
+
+            //the away team made a save
+            myGame.awayTeam.addSave();
         }
 		
 		 private void LeftGoalBtn_Click(object sender, System.Windows.RoutedEventArgs e)
@@ -104,7 +121,11 @@ namespace icehockeyWA.Views
 		
         private void RightShotBtn_Click(object sender, System.Windows.RoutedEventArgs e)
         {
+            //the home team took a shot
             myGame.awayTeam.addShot();
+
+            //the away team made a save
+            myGame.homeTeam.addSave();
         }
 
         private void RightGoalBtn_Click(object sender, System.Windows.RoutedEventArgs e)
@@ -123,24 +144,46 @@ namespace icehockeyWA.Views
 		
 		private void OthersBtn_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-        	// TODO: Add event handler implementation here.
+            saveGame();
 			NavigationService.Navigate(new Uri("/Views/OtherSettingsView.xaml", UriKind.Relative));
         }
 
         /* By Jinho
          * Timer button event
          * */
+        string temp = "20:00";
         private void TimerBtn_Click(object sender, RoutedEventArgs e)
         {
-            if (timer.IsEnabled == true)
+            //if the game is running
+            if (timer.IsEnabled == true && !betweenPeriods)
             {
                 timer.Stop();
-                TimerBtn.Foreground = new SolidColorBrush(Colors.Green);
+                temp = TimerBtn.Content.ToString();
+                TimerBtn.Content = "Paused";
+                TimerBtn.Foreground = new SolidColorBrush(Colors.Red);
             }
-            else
+            //if the game is paused
+            else if (!betweenPeriods)
             {
                 timer.Start();
-                TimerBtn.Foreground = new SolidColorBrush(Colors.Red);
+                TimerBtn.Content = temp;
+                TimerBtn.Foreground = new SolidColorBrush(Colors.Green);
+            }
+            //if we are between periods
+            else if (!myGame.currentPeriod.Equals("Period 3"))
+            {
+                betweenPeriods = false;
+                myGame.nextPeriod();
+                initialiseTimer();
+                timer.Start();
+                TimerBtn.Foreground = new SolidColorBrush(Colors.Green);
+            }
+            //if the game has ended
+            else
+            {
+                saveGame();
+                MessageBox.Show("The game has now ended. You will be redirected to the post-game screen.", "Game Over", MessageBoxButton.OK);
+                NavigationService.Navigate(new Uri("/Views/PostGameView.xaml", UriKind.Relative));
             }
         }
 
@@ -152,10 +195,17 @@ namespace icehockeyWA.Views
         public void createGame()
         {
             myGame.beginGame();
+
             PeriodTb.DataContext = myGame;
             ScoreTb.DataContext = myGame;
             HomeTeamTb.DataContext = myGame.homeTeam;
             AwayTeamTb.DataContext = myGame.awayTeam;
+        }
+
+        protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            myGame.CurrentScore = "";
         }
     }
 }

@@ -99,6 +99,8 @@ namespace icehockeyWA.Views
         //if the user attempts to add a player
         private void btnAdd_Click(object sender, RoutedEventArgs e)
         {
+            bool playerAlreadyAdded = false;
+            
             //check there is a player selected
             if (listBox3.SelectedItems.Count == 1)
             {
@@ -108,8 +110,20 @@ namespace icehockeyWA.Views
                     //when you find that player
                     if (foundList[i]._playerName == listBox3.SelectedValue.ToString())
                     {
-                        //add it to the playerList
-                        playerList.Add(foundList[i]);
+                        for (int j = 0; j < listBox1.Items.Count; j++)
+                        {
+                            if (listBox1.Items[j].ToString().Equals(foundList[i]._playerName))
+                            {
+                                playerAlreadyAdded = true;
+                                MessageBox.Show("That player has already been added to this team");
+                            }
+                        }
+
+                        if (!playerAlreadyAdded)
+                        {
+                            //add it to the playerList
+                            playerList.Add(foundList[i]);
+                        }
                     }
                 }
                 updatePlayerList();
@@ -125,5 +139,6 @@ namespace icehockeyWA.Views
 
             NavigationService.Navigate(new Uri("/Views/ConfirmPlayersView.xaml", UriKind.Relative));
         }
+
     }
 }

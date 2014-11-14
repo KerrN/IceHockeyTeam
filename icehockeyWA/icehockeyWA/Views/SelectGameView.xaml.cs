@@ -66,7 +66,7 @@ namespace icehockeyWA.Views
             if (listBox2.SelectedItems.Count == 1)
             {
                 phoneAppService.State["selectedGame"] = gameList[listBox2.SelectedIndex];
-                phoneAppService.State["selectedDivision"] = gameList[listBox1.SelectedIndex];
+                phoneAppService.State["selectedDivision"] = listBox1.SelectedItem.ToString();
                 phoneAppService.State["sender"] = "SelectGameView";
                 NavigationService.Navigate(new Uri("/Views/ConfirmPlayersView.xaml", UriKind.Relative));
             }

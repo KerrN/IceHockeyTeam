@@ -27,11 +27,11 @@
         </Grid.RowDefinitions>
         <StackPanel Margin="12,17,0,0" Name="TitlePanel">
             <TextBlock Margin="9,-7,0,0" Name="PageTitle" Text="Post Game Results" TextAlignment="Center" />
-            <ListBox Background="White" Height="272" Name="listBox1" Width="449" />
+            <ListBox Background="White" Height="272" Name="listBox1" Width="652" Foreground="Magenta" />
             <Canvas Height="123" Name="canvas1" Width="716">
                 <Button Content="Continue" Height="71" Name="button3" Width="160" Click="button3_Click" Canvas.Left="550" Canvas.Top="33" />
-                <Button Content="Overtime" Height="71" Name="button2" Width="160" Click="button2_Click" Canvas.Left="274" Canvas.Top="33" />
-                <Button Content="Penalty" Height="71" Name="button1" Width="160" Click="button1_Click" Canvas.Left="0" Canvas.Top="33" />
+                <Button Content="Overtime" Height="71" Name="button2" Width="160" Click="button2_Click" Canvas.Left="274" Canvas.Top="33" IsEnabled="False" />
+                <Button Content="Penalty" Height="71" Name="button1" Width="160" Click="button1_Click" Canvas.Left="0" Canvas.Top="33" IsEnabled="False" />
             </Canvas>
         </StackPanel>
         <Grid Height="123" HorizontalAlignment="Left" Margin="4,4,0,0" Name="grid1" VerticalAlignment="Top" Width="721">

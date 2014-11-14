@@ -401,3 +401,4 @@ C:\Users\041402459\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\De
 C:\Users\041402459\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\icehockeyWA.dll
 C:\Users\041402459\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\icehockeyWA.pdb
 C:\Users\041402459\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\XapCacheFile.xml
+C:\Users\041402459\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\Models\addPlayerView.g.i.cs

@@ -25,7 +25,8 @@ namespace icehockeyWA.Models
         public string division;
         public List<Official> officials;
         public string notes;
-        //      public Event[] events;
+        public List<Event> events;
+        public string currentScore = "0 | 0";
         public string currentPeriod;
         public string CurrentPeriod
         {
@@ -36,8 +37,12 @@ namespace icehockeyWA.Models
         }
 
         public string CurrentScore { get{
-            return homeTeam.getGoalCounter() + " | " + awayTeam.getGoalCounter() ;
+            return currentScore;
         }
+            set {
+                currentScore = homeTeam.getGoalCounter() + " | " + awayTeam.getGoalCounter(); ;
+                PropChanged("CurrentScore");
+            }
         }
 
 
@@ -51,6 +56,17 @@ namespace icehockeyWA.Models
             this.notes = "";
             this.currentPeriod = "Period 0";
             this.officials = new List<Official>();
+            this.events = new List<Event>();
+        }
+
+        public void addEvent(Goal myGoal)
+        {
+            events.Add(myGoal);
+        }
+
+        public void addEvent(Penalty myPenalty)
+        {
+            events.Add(myPenalty);
         }
 
         public void beginGame()

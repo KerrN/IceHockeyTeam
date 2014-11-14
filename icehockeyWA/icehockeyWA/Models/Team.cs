@@ -40,7 +40,7 @@ namespace icehockeyWA.Models
         private int managerID;
         private string managerName;
         private bool managerSignedOff;
-        //private Goalie currentGoalie;
+        public Goalie currentGoalie;
         
         //constructor specifying the required details
         public Team(int teamID, string teamName, int managerID, string managerName)
@@ -60,6 +60,11 @@ namespace icehockeyWA.Models
             players = new List<Player>();
         }
 
+        public Team()
+        {
+
+        }
+
         public void addPlayer(int id, string name, int num)
         {
             players.Add(new Player(id, name, num));
@@ -67,7 +72,39 @@ namespace icehockeyWA.Models
 
         public void addGoalie(int id, string name, int num)
         {
-            players.Add(new Goalie(id, name, num));
+            Goalie myGoalie = new Goalie(id, name, num);
+            players.Add(myGoalie);
+            currentGoalie = myGoalie;
+        }
+
+        public void addGoalieFromPlayer(Player myPlayer)
+        {
+            Goalie myGoalie = null;
+            
+            //ensure the current player is removed from the list
+            for (int i = 0; i < players.Count; i++)
+            {
+                if (players[i].Equals(myPlayer))
+                {
+                    //if there is a player object matching the given player
+
+                    //if that player is a goalie
+                    if (players[i].GetType().ToString().Equals("icehockeyWA.Models.Goalie"))
+                    {
+                        //set the current goalie to that player
+                        myGoalie = (Goalie)players[i];
+                    }
+                    else
+                    {
+                        players.RemoveAt(i);
+                        //create a new goalie object in the list
+                        myGoalie = new Goalie(myPlayer.playerID, myPlayer.name, myPlayer.number);
+                        players.Add(myGoalie);
+                    }
+                }
+            }
+
+            currentGoalie = myGoalie;
         }
 
         public void addShot()
@@ -100,11 +137,28 @@ namespace icehockeyWA.Models
             return goalCounter;
         }
 
-        public void addGoal()
+        public void addGoal(int playerNumber, int assist1, int assist2)
         {
             goalCounter += 1;
-
+            
             PropChanged("GoalCounter");
+
+            for(int i = 0; i < players.Count; i++)
+            {
+                if(players[i].number.Equals(playerNumber))
+                {
+                    players[i].addGoal();
+                }
+                else if (players[i].number.Equals(assist1) || players[i].number.Equals(assist2))
+                {
+                    players[i].addAssist();
+                }
+            }
+        }
+
+        public void addPenalty()
+        {
+            penaltyCounter++;
         }
 
         public int getPenaltyCounter()
@@ -130,6 +184,29 @@ namespace icehockeyWA.Models
         public bool isManagerSignedOff()
         {
             return managerSignedOff;
+        }
+
+        public void incrementGoalieCounter()
+        {
+            for (int i = 0; i < players.Count; i++)
+            {
+                if(players[i].Equals(currentGoalie))
+                {
+                    players[i].addGoalAgainst();
+                }
+            }
+        }
+
+        //this team saved a shot
+        public void addSave()
+        {
+            for (int i = 0; i < players.Count; i++)
+            {
+                if (players[i].Equals(currentGoalie))
+                {
+                    players[i].addShotAgainst();
+                }
+            }
         }
 
         //public Goalie getCurrentGoalie()
