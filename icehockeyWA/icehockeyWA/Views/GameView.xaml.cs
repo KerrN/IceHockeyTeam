@@ -103,8 +103,19 @@ namespace icehockeyWA.Views
 
             //the away team made a save
             myGame.awayTeam.addSave();
+            makeToast("Shot recorded");
         }
 		
+        //NK Added for Toast
+        public static void makeToast(string toastText)
+            {
+            //Make a new toast with content "text"
+            ShellToast toast = new ShellToast();
+            toast.Title = "Shot ";
+            toast.Content = toastText;
+            //toast.NavigationUri = new Uri();
+            toast.Show();
+            }
 		 private void LeftGoalBtn_Click(object sender, System.Windows.RoutedEventArgs e)
         {
             saveGame();

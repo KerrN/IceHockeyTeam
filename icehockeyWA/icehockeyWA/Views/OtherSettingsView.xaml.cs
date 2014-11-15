@@ -55,6 +55,12 @@ namespace icehockeyWA.Views
             // TODO: Add event handler implementation here.
             NavigationService.Navigate(new Uri("/Views/ChangeGoalieView.xaml", UriKind.Relative));
         }
+
+        //NK ADDED
+        private void button1_Click(object sender, RoutedEventArgs e)
+            {
+                NavigationService.GoBack();
+            }
         
     }
 }

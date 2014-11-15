@@ -38,10 +38,15 @@
         </Grid.RowDefinitions>
 
         <Grid Grid.Row="1" Margin="12,0,12,0" Name="ContentPanel">
-            <ListBox Background="#FF222222" BorderBrush="#FFA0A0A0" BorderThickness="3" FontSize="28" Height="244" HorizontalAlignment="Center" ItemsSource="{Binding RelativeSource={RelativeSource Self}}" Margin="336,0,29,0" Name="lstBoxGoalies" VerticalAlignment="Top" Width="339" />
-            <Button Background="#FF222222" Click="button1_Click" Content="Home" Height="96" HorizontalAlignment="Left" Margin="21,-1,0,0" Name="btnHome" VerticalAlignment="Top" Width="289" />
-            <Button Background="#FF222222" Click="button2_Click" Content="Away" Height="98" HorizontalAlignment="Left" Margin="21,101,0,0" Name="btnAway" VerticalAlignment="Top" Width="289" />
-            <Button Content="Change" Margin="488,250,29,6" Name="button1" VerticalContentAlignment="Center" Click="button1_Click_1" />
+            <ListBox Background="#FF222222" BorderBrush="#FFA0A0A0" BorderThickness="3" FontSize="28" Height="244" HorizontalAlignment="Center" ItemsSource="{Binding RelativeSource={RelativeSource Self}}" Margin="201,22,164,0" Name="lstBoxGoalies" VerticalAlignment="Top" Width="339" />
+            <Button Background="#FF222222" Click="button1_Click" Content="Home" Height="86" HorizontalAlignment="Left" Margin="21,8,0,0" Name="btnHome" VerticalAlignment="Top" Width="175" />
+            <Button Background="#FF222222" Click="button2_Click" Content="Away" Height="87" HorizontalAlignment="Left" Margin="21,194,0,0" Name="btnAway" VerticalAlignment="Top" Width="175" />
+            <Button Content="Change" Margin="550,101,8,165" Name="button1" VerticalContentAlignment="Center" Click="button1_Click_1" />
+            <Button Click="button3_Click"
+                    Content="Continue"
+                    Margin="540,256,0,0"
+                    Name="btnGo"
+                    VerticalContentAlignment="Center" />
         </Grid>
         <Grid Height="125" Margin="12,12,0,6" Name="grid1">
             <Grid.ColumnDefinitions>
@@ -50,7 +55,6 @@
             </Grid.ColumnDefinitions>
             <TextBlock Height="103" Margin="32,16,0,6" Name="PageTitle" Text="Change goalie" TextWrapping="NoWrap" VerticalAlignment="Center" Width="532" />
             <StackPanel Height="337" HorizontalAlignment="Left" Margin="207,131,0,0" Name="stackPanel1" VerticalAlignment="Top" Width="260" />
-            <Button Click="button3_Click" Content="Confirm" Margin="511,16,41,28" Name="btnGo" VerticalContentAlignment="Center" Grid.ColumnSpan="2" />
         </Grid>
     </Grid>
 </phone:PhoneApplicationPage>

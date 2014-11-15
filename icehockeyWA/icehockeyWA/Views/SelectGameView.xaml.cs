@@ -28,7 +28,7 @@ namespace icehockeyWA.Views
         {
             InitializeComponent();
             listBox1.Items.Add("Loading...");
-            listBox2.Items.Add("Loading...");
+            lbGameList.Items.Add("Loading...");
 
             int counter = 1;
             while (counter < 32)
@@ -63,9 +63,10 @@ namespace icehockeyWA.Views
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            if (listBox2.SelectedItems.Count == 1)
+            
+            if (lbGameList.SelectedItems.Count == 1)
             {
-                phoneAppService.State["selectedGame"] = gameList[listBox2.SelectedIndex];
+            phoneAppService.State["selectedGame"] = gameList[lbGameList.SelectedIndex];
                 phoneAppService.State["selectedDivision"] = listBox1.SelectedItem.ToString();
                 phoneAppService.State["sender"] = "SelectGameView";
                 NavigationService.Navigate(new Uri("/Views/ConfirmPlayersView.xaml", UriKind.Relative));
@@ -121,9 +122,9 @@ namespace icehockeyWA.Views
         private void iceService_returnScheduleCompletedCompleted(object sender, returnScheduleCompletedEventArgs e)
         {
             //empty the listbox
-            for (int i = 0; i < listBox2.Items.Count(); i++)
+            for (int i = 0; i < lbGameList.Items.Count(); i++)
             {
-                listBox2.Items.RemoveAt(i);
+            lbGameList.Items.RemoveAt(i);
             }
 
             //add each result to the gameList
@@ -135,17 +136,17 @@ namespace icehockeyWA.Views
             //add the results to the listbox
             for (int index = 0; index < e.Result.Count(); index++)
             {
-                listBox2.Items.Add(gameList[index]._s);
+            lbGameList.Items.Add(gameList[index]._s);
             }
 
             //if there is a result, select the first result
-            if (listBox2.Items.Count() > 0)
+            if (lbGameList.Items.Count() > 0)
             {
-                listBox2.SelectedIndex = 0;
+            lbGameList.SelectedIndex = 0;
             }
             else
             {
-                listBox2.Items.Add("There are no results...");
+            lbGameList.Items.Add("There are no results...");
             }
         }
 
@@ -173,6 +174,8 @@ namespace icehockeyWA.Views
             }
         }
 
+
+
         private void listBox1_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (isLoaded)
@@ -180,5 +183,15 @@ namespace icehockeyWA.Views
                 getGames();
             }
         }
+
+        private void lbGameList_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+            {
+            phoneAppService.State["selectedGame"] = gameList[lbGameList.SelectedIndex];
+            phoneAppService.State["selectedDivision"] = listBox1.SelectedItem.ToString();
+            phoneAppService.State["sender"] = "SelectGameView";
+            NavigationService.Navigate(new Uri("/Views/ConfirmPlayersView.xaml", UriKind.Relative));
+            }
+
+        
     }
 }

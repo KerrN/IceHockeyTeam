@@ -24,16 +24,16 @@
         <Grid Name="ContentPanel">
             <TextBlock Height="80" Margin="56,27,272,373" Name="PageTitle" Text="Select Game" TextAlignment="Center" Width="400" />
             <Button Click="button1_Click" Content="OK" Margin="519,28,38,373" Name="button1" />
-            <ListBox BorderBrush="#FF3CAD61" BorderThickness="3" Height="46" HorizontalAlignment="Left" Margin="76,139,0,0" Name="listBox1" VerticalAlignment="Top" Width="174" SelectionChanged="listBox1_SelectionChanged" />
-            <ListBox Height="46" HorizontalAlignment="Left" Margin="436,139,0,0" Name="listBoxdd" VerticalAlignment="Top" Width="59" SelectionChanged="listBoxdd_SelectionChanged" />
-            <ListBox Height="46" HorizontalAlignment="Left" Margin="519,139,0,0" Name="listBoxmm" VerticalAlignment="Top" Width="59" SelectionChanged="listBoxmm_SelectionChanged" />
-            <ListBox Height="46" HorizontalAlignment="Left" Margin="598,139,0,0" Name="listBoxyy" VerticalAlignment="Top" Width="92" SelectionChanged="listBoxyy_SelectionChanged" />
+            <ListBox BorderBrush="#FF3CAD61" BorderThickness="3" Height="60" HorizontalAlignment="Left" Margin="47,125,0,0" Name="listBox1" VerticalAlignment="Top" Width="238" SelectionChanged="listBox1_SelectionChanged" />
+            <ListBox Height="60" HorizontalAlignment="Left" Margin="372,125,0,0" Name="listBoxdd" VerticalAlignment="Top" Width="69" SelectionChanged="listBoxdd_SelectionChanged" />
+            <ListBox Height="60" HorizontalAlignment="Left" Margin="495,125,0,0" Name="listBoxmm" VerticalAlignment="Top" Width="79" SelectionChanged="listBoxmm_SelectionChanged" />
+            <ListBox Height="60" HorizontalAlignment="Left" Margin="598,125,0,0" Name="listBoxyy" VerticalAlignment="Top" Width="92" SelectionChanged="listBoxyy_SelectionChanged" />
             <TextBlock Height="47" HorizontalAlignment="Left" Margin="50,216,0,0" Name="textBlock1" Text="ID" VerticalAlignment="Top" Width="97" FontSize="30" Foreground="White" />
             <TextBlock FontSize="30" Height="47" HorizontalAlignment="Left" Margin="153,216,0,0" Name="textBlock2" Text="Home" VerticalAlignment="Top" Width="97" Foreground="White" />
             <TextBlock FontSize="30" Height="47" HorizontalAlignment="Left" Margin="306,216,0,0" Name="textBlock3" Text="Away" VerticalAlignment="Top" Width="97" Foreground="White" />
             <TextBlock FontSize="30" Height="47" HorizontalAlignment="Left" Margin="436,216,0,0" Name="textBlock4" Text="Time" VerticalAlignment="Top" Width="97" Foreground="White" />
             <TextBlock FontSize="30" Height="47" HorizontalAlignment="Left" Margin="540,216,0,0" Name="textBlock5" Text="Venue" VerticalAlignment="Top" Width="97" Foreground="White" />
-            <ListBox Height="190" Margin="20,284,0,0" Name="listBox2" VerticalAlignment="Top" HorizontalAlignment="Left" Width="702" BorderThickness="2" BorderBrush="White"></ListBox>
+            <ListBox Height="190" Margin="20,284,0,0" Name="lbGameList" VerticalAlignment="Top" HorizontalAlignment="Left" Width="702" BorderThickness="2" BorderBrush="White" Tap="lbGameList_Tap"/>
         </Grid>
     </Grid>
 </phone:PhoneApplicationPage>
