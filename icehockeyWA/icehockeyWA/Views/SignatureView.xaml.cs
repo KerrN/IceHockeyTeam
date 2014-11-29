@@ -25,7 +25,7 @@ namespace icehockeyWA.Views
         }
 
         private Stroke _currentStroke;
-
+        // inpresenter mechanism adapted from an online tutorial AK
         private void signaturePad_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             _currentStroke = null;
@@ -52,9 +52,12 @@ namespace icehockeyWA.Views
         }
 
         private Stack<Stroke> _removedStrokes = new Stack<Stroke>();
+        // inkpresenter mechanism end AK
 
+
+        // undo and redo functions now obselete given buttons available AK
         private void btnUndo_Click(object sender, RoutedEventArgs e)
-        {
+        {// variables stroke_count and a boolean variable indicating whether strokes count>0 have since been replaced with the below system variables AK ( original variable were mine)
             if (signaturePad.Strokes != null && signaturePad.Strokes.Count > 0)
             {
                 _removedStrokes.Push(signaturePad.Strokes.Last());
