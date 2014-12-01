@@ -402,3 +402,41 @@ C:\Users\041402459\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\De
 C:\Users\041402459\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\icehockeyWA.pdb
 C:\Users\041402459\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\XapCacheFile.xml
 C:\Users\041402459\Documents\GitHub\IceHockeyTeam\icehockeyWA\icehockeyWA\obj\Debug\Models\addPlayerView.g.i.cs
+C:\Users\Kramer\Downloads\IceHockeyTeam-master (3)\IceHockeyTeam-master\icehockeyWA\icehockeyWA\Bin\Debug\Resources\Divyellow.gif
+C:\Users\Kramer\Downloads\IceHockeyTeam-master (3)\IceHockeyTeam-master\icehockeyWA\icehockeyWA\Bin\Debug\Resources\ApplicationIcon.png
+C:\Users\Kramer\Downloads\IceHockeyTeam-master (3)\IceHockeyTeam-master\icehockeyWA\icehockeyWA\Bin\Debug\Resources\Background.png
+C:\Users\Kramer\Downloads\IceHockeyTeam-master (3)\IceHockeyTeam-master\icehockeyWA\icehockeyWA\Bin\Debug\Resources\IceWABackGroundImg.jpg
+C:\Users\Kramer\Downloads\IceHockeyTeam-master (3)\IceHockeyTeam-master\icehockeyWA\icehockeyWA\Bin\Debug\Resources\Player.jpg
+C:\Users\Kramer\Downloads\IceHockeyTeam-master (3)\IceHockeyTeam-master\icehockeyWA\icehockeyWA\Bin\Debug\Resources\Franchise-Bold.ttf
+C:\Users\Kramer\Downloads\IceHockeyTeam-master (3)\IceHockeyTeam-master\icehockeyWA\icehockeyWA\Bin\Debug\icehockeyWA.dll
+C:\Users\Kramer\Downloads\IceHockeyTeam-master (3)\IceHockeyTeam-master\icehockeyWA\icehockeyWA\Bin\Debug\icehockeyWA.pdb
+C:\Users\Kramer\Downloads\IceHockeyTeam-master (3)\IceHockeyTeam-master\icehockeyWA\icehockeyWA\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Users\Kramer\Downloads\IceHockeyTeam-master (3)\IceHockeyTeam-master\icehockeyWA\icehockeyWA\Bin\Debug\Microsoft.Phone.Controls.xml
+C:\Users\Kramer\Downloads\IceHockeyTeam-master (3)\IceHockeyTeam-master\icehockeyWA\icehockeyWA\obj\Debug\icehockeyWA.csprojResolveAssemblyReference.cache
+C:\Users\Kramer\Downloads\IceHockeyTeam-master (3)\IceHockeyTeam-master\icehockeyWA\icehockeyWA\obj\Debug\App.g.i.cs
+C:\Users\Kramer\Downloads\IceHockeyTeam-master (3)\IceHockeyTeam-master\icehockeyWA\icehockeyWA\obj\Debug\Models\addPlayerView.g.i.cs
+C:\Users\Kramer\Downloads\IceHockeyTeam-master (3)\IceHockeyTeam-master\icehockeyWA\icehockeyWA\obj\Debug\Views\AssistView.g.i.cs
+C:\Users\Kramer\Downloads\IceHockeyTeam-master (3)\IceHockeyTeam-master\icehockeyWA\icehockeyWA\obj\Debug\Views\ChangeGoalieView.g.i.cs
+C:\Users\Kramer\Downloads\IceHockeyTeam-master (3)\IceHockeyTeam-master\icehockeyWA\icehockeyWA\obj\Debug\Views\ConfirmGameView.g.i.cs
+C:\Users\Kramer\Downloads\IceHockeyTeam-master (3)\IceHockeyTeam-master\icehockeyWA\icehockeyWA\obj\Debug\Views\ConfirmPlayersView.g.i.cs
+C:\Users\Kramer\Downloads\IceHockeyTeam-master (3)\IceHockeyTeam-master\icehockeyWA\icehockeyWA\obj\Debug\Views\EditTeamView.g.i.cs
+C:\Users\Kramer\Downloads\IceHockeyTeam-master (3)\IceHockeyTeam-master\icehockeyWA\icehockeyWA\obj\Debug\Views\EntranceView.g.i.cs
+C:\Users\Kramer\Downloads\IceHockeyTeam-master (3)\IceHockeyTeam-master\icehockeyWA\icehockeyWA\obj\Debug\Views\ExtraTimeView.g.i.cs
+C:\Users\Kramer\Downloads\IceHockeyTeam-master (3)\IceHockeyTeam-master\icehockeyWA\icehockeyWA\obj\Debug\Views\InjuryView.g.i.cs
+C:\Users\Kramer\Downloads\IceHockeyTeam-master (3)\IceHockeyTeam-master\icehockeyWA\icehockeyWA\obj\Debug\Views\LogView.g.i.cs
+C:\Users\Kramer\Downloads\IceHockeyTeam-master (3)\IceHockeyTeam-master\icehockeyWA\icehockeyWA\obj\Debug\Views\GameView.g.i.cs
+C:\Users\Kramer\Downloads\IceHockeyTeam-master (3)\IceHockeyTeam-master\icehockeyWA\icehockeyWA\obj\Debug\Views\NotesView.g.i.cs
+C:\Users\Kramer\Downloads\IceHockeyTeam-master (3)\IceHockeyTeam-master\icehockeyWA\icehockeyWA\obj\Debug\Views\OtherSettingsView.g.i.cs
+C:\Users\Kramer\Downloads\IceHockeyTeam-master (3)\IceHockeyTeam-master\icehockeyWA\icehockeyWA\obj\Debug\Views\PenaltyView.g.i.cs
+C:\Users\Kramer\Downloads\IceHockeyTeam-master (3)\IceHockeyTeam-master\icehockeyWA\icehockeyWA\obj\Debug\Views\PenaltyOtherView.g.i.cs
+C:\Users\Kramer\Downloads\IceHockeyTeam-master (3)\IceHockeyTeam-master\icehockeyWA\icehockeyWA\obj\Debug\Views\PlayerNumberView.g.i.cs
+C:\Users\Kramer\Downloads\IceHockeyTeam-master (3)\IceHockeyTeam-master\icehockeyWA\icehockeyWA\obj\Debug\Views\PostGameView.g.i.cs
+C:\Users\Kramer\Downloads\IceHockeyTeam-master (3)\IceHockeyTeam-master\icehockeyWA\icehockeyWA\obj\Debug\Views\ReviewGameView.g.i.cs
+C:\Users\Kramer\Downloads\IceHockeyTeam-master (3)\IceHockeyTeam-master\icehockeyWA\icehockeyWA\obj\Debug\Views\SelectGameView.g.i.cs
+C:\Users\Kramer\Downloads\IceHockeyTeam-master (3)\IceHockeyTeam-master\icehockeyWA\icehockeyWA\obj\Debug\Views\SignatureView.g.i.cs
+C:\Users\Kramer\Downloads\IceHockeyTeam-master (3)\IceHockeyTeam-master\icehockeyWA\icehockeyWA\obj\Debug\icehockeyWA.g.resources
+C:\Users\Kramer\Downloads\IceHockeyTeam-master (3)\IceHockeyTeam-master\icehockeyWA\icehockeyWA\obj\Debug\icehockeyWA.dll
+C:\Users\Kramer\Downloads\IceHockeyTeam-master (3)\IceHockeyTeam-master\icehockeyWA\icehockeyWA\obj\Debug\icehockeyWA.pdb
+C:\Users\Kramer\Downloads\IceHockeyTeam-master (3)\IceHockeyTeam-master\icehockeyWA\icehockeyWA\Bin\Debug\AppManifest.xaml
+C:\Users\Kramer\Downloads\IceHockeyTeam-master (3)\IceHockeyTeam-master\icehockeyWA\icehockeyWA\Bin\Debug\icehockeyWA.xap
+C:\Users\Kramer\Downloads\IceHockeyTeam-master (3)\IceHockeyTeam-master\icehockeyWA\icehockeyWA\obj\Debug\XapCacheFile.xml

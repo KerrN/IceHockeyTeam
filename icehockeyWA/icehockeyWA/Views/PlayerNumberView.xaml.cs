@@ -61,9 +61,11 @@ namespace icehockeyWA.Views
                 }
             }
         }
-
+        //TK
+        // TODO: Fix gap between buttons will try to fix tommorow 
         private void addButtons()
         {
+            List<Button> btnList = new List<Button>();
             int row = 0;
             int col = 1;
             int w = 0;
@@ -78,6 +80,11 @@ namespace icehockeyWA.Views
                 {
                     row++;
                     col = 0;
+                    foreach (var item in btnList)
+                    {
+                        myScrollStackPanel.Children.Add(item);
+                    }
+                    btnList.Clear(); 
                 }
                 col++;
 
@@ -104,8 +111,9 @@ namespace icehockeyWA.Views
 
                 Button myButton = new Button();
                 myButton.Content = team.getNumberForPlayer(i);
-                myButton.Height = 105;
-                myButton.Width = 225;
+               // MessageBox.Show(team.getNumberForPlayer(i).ToString());
+                myButton.Height = 90;
+                myButton.Width = 200;
 
                 Thickness myMargin = myButton.Margin;
                 myMargin.Left = w; 
@@ -114,8 +122,10 @@ namespace icehockeyWA.Views
                 myMargin.Bottom = z;
                   
                 myButton.Margin = myMargin;
-
-                ContentPanel.Children.Add(myButton);
+                btnList.Add(myButton);
+                //ContentPanel.Children.Add(myButton);
+                //myScrollStackPanel.Children.Add(myButton);
+                //myScrollGrid.Children.Add(myButton);
                 myButton.Click += new RoutedEventHandler(this.playernumber_Click);
 
 

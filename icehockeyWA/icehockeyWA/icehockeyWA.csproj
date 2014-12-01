@@ -53,6 +53,7 @@
     <Reference Include="Microsoft.Phone" />
     <Reference Include="Microsoft.Phone.Controls.Toolkit, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b772ad94eb9ca604, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.Phone.Interop" />
+    <Reference Include="system.data.linq" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Windows" />
@@ -61,11 +62,20 @@
     <Reference Include="System.Net" />
     <Reference Include="System.Xml" />
     <Reference Include="mscorlib.extensions" />
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DataContext\DataContact.cs" />
+    <Compile Include="DataContext\DataGame.cs" />
+    <Compile Include="DataContext\DataGoals.cs" />
+    <Compile Include="DataContext\DataLocation.cs" />
+    <Compile Include="DataContext\DataOfficals.cs" />
+    <Compile Include="DataContext\DataPenalties.cs" />
+    <Compile Include="DataContext\DataTeam.cs" />
+    <Compile Include="DataContext\player_team.cs" />
     <Compile Include="Models\addPlayerView.xaml.cs">
       <DependentUpon>addPlayerView.xaml</DependentUpon>
     </Compile>
