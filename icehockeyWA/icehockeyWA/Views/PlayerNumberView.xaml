@@ -40,6 +40,9 @@
 		-->
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1">
+
+            <!-- Makes the page scrollable TK
+		-->
             <ScrollViewer HorizontalAlignment="Left" Height="300" Margin="10,10,0,0" VerticalAlignment="Top" Width="691">
                 <StackPanel x:Name="myScrollStackPanel" VerticalAlignment="Top" HorizontalAlignment="Left">
                     

@@ -61,8 +61,8 @@ namespace icehockeyWA.Views
                 }
             }
         }
-        //TK
-        // TODO: Fix gap between buttons will try to fix tommorow 
+        //TK Fix gap between buttons, you can now see all buttons and buttons are srcollable
+        // TODO: align buttons, buttons do not align.
         private void addButtons()
         {
             List<Button> btnList = new List<Button>();
@@ -89,8 +89,8 @@ namespace icehockeyWA.Views
                 col++;
 
                 //set some values based on the row
-                x = 110 * (row - 1);
-                z = 220 - (110 * (row - 1));
+               x = 0 + (row - 1);
+               z = -60 - (row - 1); 
 
                 //set the other values based on column
                 if (col == 1)
