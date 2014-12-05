@@ -80,6 +80,8 @@ namespace icehockeyWA.Views
             }
         }
 
+		//adds one button to the screen (in a grid) for each player (showing their player
+		//number), and one for 'no assist'. The scoring player will not be added. R.P.
         private void addButtons()
         {
             int row = 0;
@@ -155,6 +157,9 @@ namespace icehockeyWA.Views
 
         }
 
+		//when a player is selected
+		//checks whether this is the first or second assist, and whether a second assist
+		//is necessary R.P.
         private void playernumber_Click(object sender, RoutedEventArgs e)
         {
             //if the assist2 has not yet been set
@@ -186,7 +191,8 @@ namespace icehockeyWA.Views
                 NavigationService.GoBack();
             }
         }
-
+        
+		//creates a goal object for the game, and adds the required details. R.P.
         private void createGoal()
         {
 

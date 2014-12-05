@@ -32,6 +32,7 @@ namespace icehockeyWA.Views
             loadDefaultView();
         }
 
+		//this function causes the default colors to be shown (i.e. home team is selected) R.P.
         private void loadDefaultView()
         {
             btnHome.Background = white;
@@ -44,6 +45,7 @@ namespace icehockeyWA.Views
             loadPlayerOptions();
         }
 
+		//read in the game details from the application service state R.P.
         public void loadGame()
         {
             object temp;
@@ -87,6 +89,7 @@ namespace icehockeyWA.Views
             loadPlayerOptions();
         }
 
+		//loads the list of players for the selected team in to the list box R.P.
         private void loadPlayerOptions()
         {
             lstBoxGoalies.Items.Clear();
@@ -104,6 +107,8 @@ namespace icehockeyWA.Views
             }
         }
 
+		//created a Goalie object that mirrors the selected player object, then removes
+		//the selected player. R.P.
         private void createNewGoalie()
         {
             Player myPlayer = null;

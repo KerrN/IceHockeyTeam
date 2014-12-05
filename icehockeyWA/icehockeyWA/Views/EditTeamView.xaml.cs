@@ -40,6 +40,7 @@ namespace icehockeyWA.Views
             updatePlayerList();
         }
 
+		//function to update the list box to display the current players on the team R.P.
         public void updatePlayerList()
         {
             //empty the listbox
@@ -72,6 +73,7 @@ namespace icehockeyWA.Views
             searchPlayers();
         }
 
+		//Connect to the service to retrieve players matching the search criteria R.P.
         private void searchPlayers()
         {
             //sets up the service
@@ -85,6 +87,7 @@ namespace icehockeyWA.Views
             listBox3.Items.Clear();
         } 
 
+		//function called on return of search results R.P.
         private void iceService_searchPlayersCompleted(object sender, searchPlayersCompletedEventArgs e)
         {
 
