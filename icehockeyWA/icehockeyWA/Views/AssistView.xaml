@@ -15,7 +15,7 @@
 
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot">
-
+        <!--Page originally made by Josh Lloyd -->
         <!--Adding Background to View - Sean M -->
         <Grid.Background>
             <ImageBrush ImageSource="../Resources/IceWABackGroundImg.jpg" Stretch="Fill" />

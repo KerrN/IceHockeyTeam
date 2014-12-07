@@ -26,7 +26,7 @@
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>-->
     <Grid Name="LayoutRoot">
-
+        <!--Page originally  by Josh Lloyd -->
         <!--Adding Background to View - Sean M -->
         <Grid.Background>
             <ImageBrush ImageSource="../Resources/IceWABackGroundImg.jpg" Stretch="Fill" />

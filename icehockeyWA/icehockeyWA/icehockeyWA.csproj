@@ -119,6 +119,9 @@
     <Compile Include="Views\ConfirmPlayersView.xaml.cs">
       <DependentUpon>ConfirmPlayersView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\EditLog.xaml.cs">
+      <DependentUpon>EditLog.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\EditTeamView.xaml.cs">
       <DependentUpon>EditTeamView.xaml</DependentUpon>
     </Compile>
@@ -196,6 +199,10 @@
     <Page Include="Views\ConfirmPlayersView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\EditLog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\EditTeamView.xaml">
       <Generator>MSBuild:Compile</Generator>
